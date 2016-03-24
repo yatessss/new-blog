@@ -1,0 +1,1029 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <meta name="360-site-verification" content="66c13bfe289a4567ff8d8408eef5f949" />
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="handlebars,小数点精确,url携带参数," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="yatessss" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="最近几天，在做一个类似列表的一个界面，在做的时候碰到了很多问题和总结了一些经验，在这里有必要记录一下。设计图如下：
+
+
+
+遇到的问题页面看起来并不复杂，可以后台返回的数据并不是很完整，所以遇到了一些问题，有的问题在我看来不是很难我这里就不再描述了（以我的水平如果觉得不难那一定是非常简单了。。。 - -），具体有以下四个问题：
+
+后台返回的交易类型有三种，根据每种交易类型展示不同的图片，可以参考上面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日常工作总结-2016-02-19">
+<meta property="og:url" content="http://yoursite.com/2016/02/19/工作总结/index.html">
+<meta property="og:site_name" content="yatessss">
+<meta property="og:description" content="最近几天，在做一个类似列表的一个界面，在做的时候碰到了很多问题和总结了一些经验，在这里有必要记录一下。设计图如下：
+
+
+
+遇到的问题页面看起来并不复杂，可以后台返回的数据并不是很完整，所以遇到了一些问题，有的问题在我看来不是很难我这里就不再描述了（以我的水平如果觉得不难那一定是非常简单了。。。 - -），具体有以下四个问题：
+
+后台返回的交易类型有三种，根据每种交易类型展示不同的图片，可以参考上面">
+<meta property="og:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_picdaozhang.jpg">
+<meta property="og:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_picdaozhang_detail.jpg">
+<meta property="og:updated_time" content="2016-03-24T09:23:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="日常工作总结-2016-02-19">
+<meta name="twitter:description" content="最近几天，在做一个类似列表的一个界面，在做的时候碰到了很多问题和总结了一些经验，在这里有必要记录一下。设计图如下：
+
+
+
+遇到的问题页面看起来并不复杂，可以后台返回的数据并不是很完整，所以遇到了一些问题，有的问题在我看来不是很难我这里就不再描述了（以我的水平如果觉得不难那一定是非常简单了。。。 - -），具体有以下四个问题：
+
+后台返回的交易类型有三种，根据每种交易类型展示不同的图片，可以参考上面">
+<meta name="twitter:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_picdaozhang.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265504312420468000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 日常工作总结-2016-02-19 | yatessss </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '72832855-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?f6464d92b182a05585e6857779d41ec0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">yatessss</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '9aFGnEj1K3yKisZj-yBe','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                日常工作总结-2016-02-19
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-19T00:00:00+08:00" content="2016-02-19">
+              2016-02-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工作总结/" itemprop="url" rel="index">
+                    <span itemprop="name">工作总结</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/19/工作总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/19/工作总结/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/02/19/工作总结/" class="leancloud_visitors" data-flag-title="日常工作总结-2016-02-19">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近几天，在做一个类似列表的一个界面，在做的时候碰到了很多问题和总结了一些经验，在这里有必要记录一下。设计图如下：</p>
+<p><img src="http://7xqch8.com1.z0.glb.clouddn.com/blog_picdaozhang.jpg" alt=""></p>
+<p><img src="http://7xqch8.com1.z0.glb.clouddn.com/blog_picdaozhang_detail.jpg" alt=""></p>
+<hr>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>页面看起来并不复杂，可以后台返回的数据并不是很完整，所以遇到了一些问题，有的问题在我看来不是很难我这里就不再描述了（以我的水平如果觉得不难那一定是非常简单了。。。 - -），具体有以下四个问题：</p>
+<ol>
+<li>后台返回的交易类型有三种，根据每种交易类型展示不同的图片，可以参考上面到账详情那张图片。</li>
+<li>请看最近到账那张图片，列表的到账状态有四种，根据不同的状态展示的文字颜色需要不一样。</li>
+<li>后台返回的金额都是以分为单位的，而页面上展示的是以元为单位的。</li>
+<li>详情页面的有些信息后台并没有返回给你，必须从列表页面来获取这些信息运用到这个界面上。</li>
+</ol>
+<p>这就是遇到的几个比较让我头疼的问题，下面我来简单说一下每个问题的解决办法。</p>
+<hr>
+<h4 id="1-问题一和问题二"><a href="#1-问题一和问题二" class="headerlink" title="1. 问题一和问题二"></a>1. 问题一和问题二</h4><p>问题一和二，其实就是模板语言上面的问题，现在加载页面有一些页面上要展示出来的数据其实是后台返回给你的。所以你要预先读取这些数据并通过浏览器渲染到你的页面上。基本做前端的同学应该都会用到模板语言，而我用的是<code>handlebars</code>这个模板语言（其实解决这个问题的办法是换一个模板语言，最后我会简单的说一下），我主要是描述一下用<code>handlebars</code>这个模板语言是怎么解决的。</p>
+<p>在<code>handlebars</code>当中的<code>#if</code>只能来做这个变量存不存在的简单判断，而不能在<code>if</code>当中加一些参数的判断，所以这里我们需要引用<code>handlebars helper</code>，在我理解这个其实就是用来补充<code>handlebars</code>中的不足的，在<code>handlebars helper</code>中可以进行一些复杂的判断，以我用的这个<code>helper</code>为例来分析一下，我这个<code>helper</code>的功能是这样的，他可以判断后台返回的一个字段的类型，如果类型是微信支付就显示微信支付的图标，如果是支付宝就显示支付宝的图标。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//这里是注册了一个新的helper，名字叫做compare，而这个helper接受了三个参数，第一个和第二个参数是必填的，第三个参数是选填的</span></span><br><span class="line">Handlebars.registerHelper(<span class="string">"compare"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">v1,v2,options</span>)</span>&#123;</span><br><span class="line">	 <span class="comment">//比较参数  满足条件添加继续执行</span></span><br><span class="line">    <span class="keyword">if</span>(v1 == v2)&#123;</span><br><span class="line">        <span class="keyword">return</span> options.fn(<span class="keyword">this</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="comment">//不满足条件执行&#123;else&#125;部分</span></span><br><span class="line">        <span class="keyword">return</span> options.inverse(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>如上代码，注释写在了里面，我只想说一下<code>options.fn(this)</code>，其实这个意思就是执行下面的部分，这个部分其实不是在我们的js函数中，而是在我们引用这个<code>helper</code>的那个html页面中出现<code># compare</code>的这个地方。看如下代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//比较type是不是card</span><br><span class="line">   &#123;#compare type 'card'&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/ic_card.svg"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">     &#123;else&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/ic_weixin.svg"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">   &#123;/compare&#125;</span><br></pre></td></tr></table></figure>
+<p>如上，这个就是我在html页面的部分代码，<code>options.fn(this)</code>的功能就是执行<code># compare</code>和<code>else</code>之间的代码。（以我浅显的理解，通俗的解释。。。。。）。</p>
+<p>PS:少写了一个花括号是因为双花括号在markdown语法中不能正常显示出来。。。。</p>
+<p>说完<code>handlebars</code>模板语言之后，我们来说另一种模板语言，<code>template.js</code>这个模板语法相比<code>handlebars</code>很轻量级，所以很适合移动端使用。他的语法和<code>handlebars</code>类似，而且他可以做一些比较复杂的逻辑判断，比如<code>if</code>判断来说他可以支持<code>if a &gt; b || ( a &lt; c &amp;&amp; a == d )</code>这样的复杂判断。使用这样的模板语言，能够基本完成渲染时碰到的一些常用需求。</p>
+<hr>
+<h4 id="2-问题三"><a href="#2-问题三" class="headerlink" title="2. 问题三"></a>2. 问题三</h4><p>后台返给我的数据是以<code>分</code>为单位的，而我要显示为以<code>元</code>为单位的并且保留两位小数，怎么办？其实这个函数是我网上搜索来的，因为我当时只是单纯的把返回的数据除以了100，这样是变成以<code>元</code>为单位了，但是没有保留两位小数。网上的具体方法是这样的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//分转换为元</span></span><br><span class="line"><span class="keyword">var</span> fen_yuan = <span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//toFixed来确定保留两位小数  因为除以100 所以都会整除</span></span><br><span class="line">    <span class="keyword">var</span> str = (val/<span class="number">100</span>).toFixed(<span class="number">2</span>) + <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> intSum = str.substring(<span class="number">0</span>,str.indexOf(<span class="string">"."</span>)).replace( <span class="regexp">/\B(?=(?:\d&#123;3&#125;)+$)/g</span>, <span class="string">','</span> );</span><br><span class="line">    <span class="comment">//取到整数部分</span></span><br><span class="line">    <span class="keyword">var</span> dot = str.substring(str.length,str.indexOf(<span class="string">"."</span>))</span><br><span class="line">    <span class="comment">//取到小数部分</span></span><br><span class="line">    <span class="keyword">var</span> ret = intSum + dot;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如上代码，我给出了基本的注释，大家应该可以读懂，但是注意<code>tofixed()</code>这个函数会把小数点后面的部分进行四舍五入，所以不能得到精确结果。这个地方运用的因为是除以100，所以不存在不精确的问题，如果大家来使用的时候还是要参考当前的需求的。</p>
+<h4 id="3-问题四"><a href="#3-问题四" class="headerlink" title="3. 问题四"></a>3. 问题四</h4><p>有些时候我们在这个页面获得了一些数据，但是我们在去往下一个页面的时候还是需要这些数据而下一个页面的接口没有返回这些数据的时候怎么办？</p>
+<p>这时候就需要把我们需要的数据拼接到<code>url</code>当中，在到了下一个页面的时候，再把<code>url</code>中的参数分离出来，调用我们需要的一些参数。</p>
+<p>分离<code>url</code>参数的方法贴在下面，供大家参考。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> getQuery = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> url=location.search;</span><br><span class="line">    <span class="keyword">var</span> Request = &#123;&#125;;</span><br><span class="line">    <span class="keyword">if</span>(url.indexOf(<span class="string">"?"</span>)!=<span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> str = url.substr(<span class="number">1</span>);</span><br><span class="line">        strs = str.split(<span class="string">"&amp;"</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;strs.length;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> _key = strs[i].split(<span class="string">"="</span>)[<span class="number">0</span>];</span><br><span class="line">            Request[_key]=strs[i].split(<span class="string">"="</span>)[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> Request;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>如上代码，我们把<code>url</code>中<code>?</code>号部分后面的参数分离出来，组成一个对象，在需要哪个参数的时候，我们只要调用<code>getQuery</code>中对应的属性就可以了。</p>
+<hr>
+<h3 id="学习到的经验"><a href="#学习到的经验" class="headerlink" title="学习到的经验"></a>学习到的经验</h3><h4 id="1-添加标识符"><a href="#1-添加标识符" class="headerlink" title="1. 添加标识符"></a>1. 添加标识符</h4><p>在写<code>ajax</code>的时候，在<code>ajax</code>的不同阶段，应该设置一个标识符来进行标识，以<code>jquery</code>的<code>ajax</code>为例，比如：<code>beforeSend</code>，<code>success</code>，<code>complete</code>等等不同的阶段，对发送<code>ajax</code>的状态来进行标识。</p>
+<p>这个经验其实是这样的：我在设置下拉加载更多的时候，发现有的时候可能会发出多次请求，如果我们在程序里加上一个标识符，就可以避免这个问题的发生，如下代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">beforeSend: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    loading = <span class="literal">true</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">success: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    page += <span class="number">1</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">complete: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    loading = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>如上代码这个只是举一个例子，并不是全部代码，逻辑大概是这样，当页面滑到底部，就发出一个请求请求<code>page+1</code>页的数据。如果我一次下拉发出多次请求的话，在<code>success</code>中的<code>page</code>就会累加多次，出现错误。如果我们添加了标识符后，当只有<code>loading</code>结束的时候才去发送下一次请求，所以当一些特殊情况比如网络不好的情况下，下拉了多次而<code>ajax</code>还没有发送成功的时候，是不会发送第二次<code>ajax</code>请求的。这样就能避免这个问题的产生。</p>
+<hr>
+<h4 id="2-可以通过url把参数带到下一个页面"><a href="#2-可以通过url把参数带到下一个页面" class="headerlink" title="2. 可以通过url把参数带到下一个页面"></a>2. 可以通过url把参数带到下一个页面</h4><p>这个经验在上面的问题中已经说过了，而且我还听同事介绍了，其实这种方式是最常用的一种把参数传导下一个页面的办法，虽说这种办法显得url不够优雅。。。。。</p>
+<hr>
+<h4 id="3-如果url所带的参数中有汉字怎么办"><a href="#3-如果url所带的参数中有汉字怎么办" class="headerlink" title="3. 如果url所带的参数中有汉字怎么办"></a>3. 如果url所带的参数中有汉字怎么办</h4><p>在我携带参数的时候，有的参数可能是汉字，而在参数带到下一个页面后，如果调用这个参数的话，会出现乱码类似于<code>%E5%B7%A5%E4</code>这样的。其实这个不是乱码，而是浏览器所做的<code>encodeURI编码</code>，而我们所要做的就是只要把它<code>decodeURI</code>解码后，我们就可以在下一个页面中正常的使用了。</p>
+<hr>
+<h4 id="4-handlebars-helpers的学习"><a href="#4-handlebars-helpers的学习" class="headerlink" title="4. handlebars helpers的学习"></a>4. handlebars helpers的学习</h4><p>这个在上文中已经做了介绍，其实<code>helper</code>还能完成一些更复杂的逻辑，大家可以多试一试，比如我在遇到判断的类型多的时候就写了一个<code>switch</code>的<code>helper</code>。</p>
+<p>以上。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/handlebars/" rel="tag">#handlebars</a>
+          
+            <a href="/tags/小数点精确/" rel="tag">#小数点精确</a>
+          
+            <a href="/tags/url携带参数/" rel="tag">#url携带参数</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/17/初学React遇到的坑/" rel="next" title="初学React遇到的坑">
+                <i class="fa fa-chevron-left"></i> 初学React遇到的坑
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/10/工作总结/" rel="prev" title="日常工作总结-2016-03-10">
+                日常工作总结-2016-03-10 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/02/19/工作总结/"
+           data-title="日常工作总结-2016-02-19" data-url="http://yoursite.com/2016/02/19/工作总结/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xqch8.com1.z0.glb.clouddn.com/%E5%A4%B4%E5%83%8F4bed2e738bd4b31ca1ce4d1787d6277f9f2ff8a8.jpg"
+               alt="yatessss" />
+          <p class="site-author-name" itemprop="name">yatessss</p>
+          <p class="site-description motion-element" itemprop="description">Fine Thanks And You ??</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yatessss" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.tudou.com/home/_63884113" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 土豆
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-问题一和问题二"><span class="nav-number">1.1.</span> <span class="nav-text">1. 问题一和问题二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-问题三"><span class="nav-number">1.2.</span> <span class="nav-text">2. 问题三</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-问题四"><span class="nav-number">1.3.</span> <span class="nav-text">3. 问题四</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#学习到的经验"><span class="nav-number">2.</span> <span class="nav-text">学习到的经验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-添加标识符"><span class="nav-number">2.1.</span> <span class="nav-text">1. 添加标识符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-可以通过url把参数带到下一个页面"><span class="nav-number">2.2.</span> <span class="nav-text">2. 可以通过url把参数带到下一个页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-如果url所带的参数中有汉字怎么办"><span class="nav-number">2.3.</span> <span class="nav-text">3. 如果url所带的参数中有汉字怎么办</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-handlebars-helpers的学习"><span class="nav-number">2.4.</span> <span class="nav-text">4. handlebars helpers的学习</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yatessss</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yatessss"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("M9t60UMoz8vE3WEB9Mgb7Ug5-gzGzoHsz", "QAbOr1jkatmeYL1iNio5SkoQ");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>
