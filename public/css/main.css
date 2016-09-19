@@ -1495,7 +1495,7 @@ pre .javascript .function {
   color: #fff;
 }
 .links-of-author {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .links-of-author a {
   display: inline-block;
@@ -1513,7 +1513,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f4e925;
+  background: #73ffd0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2401,6 +2401,7 @@ body {
   color: #e34603;
 }
 .links-of-author-item {
+  text-align: center;
   display: inline-block;
   width: 48%;
 }

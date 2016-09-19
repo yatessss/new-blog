@@ -1,0 +1,16 @@
+.fa-heart:before{
+    color: #c60000;
+}
+
+#counter-busuanzi{
+    display: block;
+    text-align: center;
+    line-height: 2;
+    margin-top: 15px;
+}
+#busuanzi_container_site_uv span{
+    color: #FC6423;
+}
+#busuanzi_container_site_pv span{
+    color: #c60000;
+}

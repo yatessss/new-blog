@@ -1,0 +1,1065 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <meta name="360-site-verification" content="66c13bfe289a4567ff8d8408eef5f949" />
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/custom_style.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="vue,文件上传," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="yatessss" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="需求描述最近加班加点完成了一个上传文件的需求，听起来很简单想着也很简单，但是知易行难实际操作起来，还是遇到了很多问题，现在就来总结一下，使用vue来构建一个上传文件的页面中会遇到哪些问题，其中的一些问题也可能是用别的框架也会遇到的问题。
+平台：主要是在安卓和苹果的微信webview中运行。
+先来看下主要的技术点：
+
+父子组件的动态渲染
+初始化数据和判断数据
+input表单隐藏联动
+上传图片后可以预">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用vue完成上传文件页面">
+<meta property="og:url" content="http://www.yatessss.com/2016/06/08/使用vue完成上传文件页面.html">
+<meta property="og:site_name" content="yatessss">
+<meta property="og:description" content="需求描述最近加班加点完成了一个上传文件的需求，听起来很简单想着也很简单，但是知易行难实际操作起来，还是遇到了很多问题，现在就来总结一下，使用vue来构建一个上传文件的页面中会遇到哪些问题，其中的一些问题也可能是用别的框架也会遇到的问题。
+平台：主要是在安卓和苹果的微信webview中运行。
+先来看下主要的技术点：
+
+父子组件的动态渲染
+初始化数据和判断数据
+input表单隐藏联动
+上传图片后可以预">
+<meta property="og:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_06_pic_1.png">
+<meta property="og:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_2.gif">
+<meta property="og:updated_time" content="2016-06-12T07:05:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用vue完成上传文件页面">
+<meta name="twitter:description" content="需求描述最近加班加点完成了一个上传文件的需求，听起来很简单想着也很简单，但是知易行难实际操作起来，还是遇到了很多问题，现在就来总结一下，使用vue来构建一个上传文件的页面中会遇到哪些问题，其中的一些问题也可能是用别的框架也会遇到的问题。
+平台：主要是在安卓和苹果的微信webview中运行。
+先来看下主要的技术点：
+
+父子组件的动态渲染
+初始化数据和判断数据
+input表单隐藏联动
+上传图片后可以预">
+<meta name="twitter:image" content="http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_06_pic_1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265504312420468000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 使用vue完成上传文件页面 | yatessss </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '72832855-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?f6464d92b182a05585e6857779d41ec0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">yatessss</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">记录的地方</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            文章列表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '9aFGnEj1K3yKisZj-yBe','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                使用vue完成上传文件页面
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-08T00:00:00+08:00" content="2016-06-08">
+              2016-06-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工作总结/" itemprop="url" rel="index">
+                    <span itemprop="name">工作总结</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/08/使用vue完成上传文件页面.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/08/使用vue完成上传文件页面.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/06/08/使用vue完成上传文件页面.html" class="leancloud_visitors" data-flag-title="使用vue完成上传文件页面">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h3><p>最近加班加点完成了一个上传文件的需求，听起来很简单想着也很简单，但是知易行难实际操作起来，还是遇到了很多问题，现在就来总结一下，使用vue来构建一个上传文件的页面中会遇到哪些问题，其中的一些问题也可能是用别的框架也会遇到的问题。</p>
+<p>平台：主要是在安卓和苹果的微信webview中运行。</p>
+<p>先来看下主要的技术点：</p>
+<ol>
+<li>父子组件的动态渲染</li>
+<li>初始化数据和判断数据</li>
+<li>input表单隐藏联动</li>
+<li>上传图片后可以预览</li>
+</ol>
+<p>遇到的问题：</p>
+<ol>
+<li>在iPhone中，click()事件无效</li>
+<li>在微信安卓webview中，img标签使用background属性无效</li>
+<li>预览上传图片保证宽高比</li>
+<li>在某些安卓机型用rem单位不显示边框</li>
+</ol>
+<p>设计图大概是这样的：</p>
+<p><img src="http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_06_pic_1.png" alt=""></p>
+<p>完成后的效果是这样：</p>
+<ol>
+<li>首先登陆后，如果没有选择两个选项的话提交按钮点击不了并会有提示</li>
+<li>当选择图片后，下面会显示选择图片的缩略图</li>
+<li>当点击提交后，会显示loading成功后会刷新页面</li>
+<li>提交过的部分不会显示示意图会改为一张提示图片，刚上传过所有图片时会提示已经上传过所有图片</li>
+</ol>
+<p><img src="http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_2.gif" alt=""></p>
+<p>大概就是这么一个步骤流程吧。</p>
+<h3 id="技术点分析"><a href="#技术点分析" class="headerlink" title="技术点分析"></a>技术点分析</h3><p>这个页面主要使用的UI包括：提示、loading、选项栏等都是从WEUI样式库中扒出来的，因为是在微信公众号中使用的，体验上会一致。上传部分使用的是post表单上传，我把form表单隐藏了起来，通过模拟上传按钮，当点击上传按钮的时候同步触发表单中的input type=‘file’标签，调起原生的选择图片的界面，选择图片后，点击上传按钮的同时触发一个post请求把图片传到后台，完成整个功能。</p>
+<h4 id="父子组件的动态渲染"><a href="#父子组件的动态渲染" class="headerlink" title="父子组件的动态渲染"></a>父子组件的动态渲染</h4><p>可以从设计图看出上传图片的部分基本上设计是一样的，所以用一个vue组件来复用是最好的，顺便说一下这个页面用到了三个组件，一个是dialog提示的组件，一个是loading的组件，还有一个就是上传这部分用到的组件。</p>
+<p>主要说一下上传部分的组件，在vue中，子父组件要传递的参数需要在子组件的props中声明，下面是我的组件中的模板，我主要用到了以下参数：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span> <span class="attr">v-if</span>=<span class="string">"comTitle"</span> <span class="attr">class</span>=<span class="string">"com-title"</span>&gt;</span>&#123;&#123;comTitle&#125;&#125;<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"upload-box"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h2</span>&gt;</span>&#123;&#123;nameCn&#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-box"</span> <span class="attr">id</span>=<span class="string">"&#123;&#123;nameId&#125;&#125;"</span> <span class="attr">:style</span>=<span class="string">"bgUrl"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;img :src="imgUrl"&gt;--&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"tip"</span> <span class="attr">v-if</span>=<span class="string">"tip"</span>&gt;</span>&#123;&#123;tip&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--&lt;div v-if="isUpload" class="upload-btn upload-true"&gt;图片已提交&lt;/div&gt;--&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"!isUpload"</span> <span class="attr">class</span>=<span class="string">"upload-btn upload-false clickable-div"</span> <span class="attr">onclick</span>=<span class="string">"document.querySelector('input').click()"</span> @<span class="attr">click</span>=<span class="string">"inputBtn(name, $event)"</span>&gt;</span>上传图片<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="comment">/*</span><br><span class="line">* name：主要是让input表单和组件通过id产生关联</span><br><span class="line">* nameCn：组件的title</span><br><span class="line">* imgUrl：（最后弃用但没有删掉）</span><br><span class="line">* isUpload： 标识有没有上传，这个会在父组件中进行判断，如果已经上传了会把上传按钮隐藏掉</span><br><span class="line">* tip：图片下部的说明文字</span><br><span class="line">* bgUrl：默认的说明背景图，上传完成后会在父组件中更改这个图片改成一张上传完成的提示图</span><br><span class="line">*/</span></span><br><span class="line">props: [<span class="string">'name'</span>, <span class="string">'nameCn'</span>, <span class="string">'imgUrl'</span>, <span class="string">'isUpload'</span>, <span class="string">'tip'</span>, <span class="string">'bgUrl'</span>, <span class="string">'comTitle'</span>]，</span><br><span class="line">computed: &#123;</span><br><span class="line">  nameId () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name + <span class="string">'content'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后在父组件中我们可以引入这个组件，并声明它，然后在标签中把子组件需要用到的参数传递进去就好了。我这里是使用了<code>v-for</code>去遍历了一个<code>result_data</code>的数组，把所有需要上传的组件遍历渲染了出来。如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;upload v-for="(index, item) in result_data" :name="item.name" :name-cn="item.nameCn" :bg-url="item.bgUrl" :img-url="item.imgUrl" :tip="item.tip" :is-upload="item.isUpload" :com-title="item.comTitle"&gt; &lt;/upload&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  import upload from './upload.vue'</span><br><span class="line">  components: &#123;</span><br><span class="line">      upload</span><br><span class="line">    &#125;,</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>这样子父组件就可以传递数据了，具体的大家可以去看一下官方的文档。</p>
+<h4 id="初始化数据和判断数据"><a href="#初始化数据和判断数据" class="headerlink" title="初始化数据和判断数据"></a>初始化数据和判断数据</h4><p>这是这个任务里最坑的一个部分。因为后台只会把已经上传过图片的字段告诉我，所以我需要在前端去造一些初始化的数据，去和后台返回回来的比较，再去判断哪些上传过需要展示出来，那些没上传需要上传。</p>
+<p>注意：可以造数据的前提是，数据量不是很大，且数据是固定的。其实最好是后台可以完成这些判断，因为前端本就不应该去处理数据方面的逻辑。</p>
+<p>我初始化的数据大概是这个样子的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">init_data: [</span><br><span class="line"><span class="comment">//          0</span></span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'shopphoto'</span>,</span><br><span class="line">    nameCn: <span class="string">'店铺门头照片'</span>,</span><br><span class="line">    bgUrl: &#123;</span><br><span class="line">      backgroundImage: <span class="string">"url('http://near.m1img.com/op_upload/62/146502860635.jpg')"</span>,</span><br><span class="line">      backgroundSize: <span class="string">'100% 100%'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    imgUrl: <span class="string">''</span>,</span><br><span class="line">    tip: <span class="string">''</span>,</span><br><span class="line">    isUpload: <span class="literal">false</span></span><br><span class="line">  &#125;,</span><br><span class="line">	</span><br><span class="line"><span class="comment">//          1</span></span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'goodsphoto'</span>,</span><br><span class="line">    nameCn: <span class="string">'店铺内景照片'</span>,</span><br><span class="line">    bgUrl: &#123;</span><br><span class="line">      backgroundImage: <span class="string">"url('http://near.m1img.com/op_upload/62/146502865726.jpg')"</span>,</span><br><span class="line">      backgroundSize: <span class="string">'100% 100%'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    imgUrl: <span class="string">''</span>,</span><br><span class="line">    tip: <span class="string">''</span>,</span><br><span class="line">    isUpload: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>然后我去遍历后台返回的那个数组和我自己初始化得数组，用<code>name</code>这个字段产生关联去比较，因为后台只返回了上传过图片的字段，所以我就可以判断出哪些是没有上传的部分。判断的逻辑如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">compareArr (oldArr, newArr) &#123;</span><br><span class="line">    <span class="keyword">var</span> _this = <span class="keyword">this</span></span><br><span class="line">    <span class="keyword">var</span> _oldArr = oldArr</span><br><span class="line">    <span class="keyword">var</span> _newArr = newArr</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len1 = _newArr.length; i &lt; len1; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>, len2 = _oldArr.length; j &lt; len2; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (_newArr[i].name === _oldArr[j].name) &#123;</span><br><span class="line">          <span class="keyword">let</span> initData = _this.init_data</span><br><span class="line">          initData[i].bgUrl = &#123;</span><br><span class="line">            backgroundImage: <span class="string">"url('http://near.m1img.com/op_upload/62/146520417256.png')"</span>,</span><br><span class="line">            backgroundSize: <span class="string">'100% 100%'</span></span><br><span class="line">          &#125;</span><br><span class="line">          initData[i].isUpload = <span class="literal">true</span></span><br><span class="line">          _this.$set(<span class="string">'init_data'</span>, initData)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>我会给这个方法传入两个数组。oldArr是后台的数组，newArr是我自己初始化的数组。<br>循环遍历比较两个数组，把我自己初始化的数据做出一些修改，主要是提示图片和是否上传标识字段的更改。</p>
+<h4 id="input表单隐藏联动"><a href="#input表单隐藏联动" class="headerlink" title="input表单隐藏联动"></a>input表单隐藏联动</h4><p>这个逻辑也不是很复杂，就是在点击上传按钮的时候，调一个方法，在方法中选择到对应的<code>input</code>标签出发一个<code>click()</code>事件，主要是在iphone上面，可能会不支持input type=‘file’的标签，这里有一个坑，在网上找到了一些解决办法，但是试了一下没有效果，最后自己试验了一下找到了一个解决办法，在下面遇到的问题中会叙述。</p>
+<p>第二是要注意在form表单中要禁止事件冒泡，不然你点击一次input表单就会提交一次。</p>
+<h4 id="上传图片后可以预览"><a href="#上传图片后可以预览" class="headerlink" title="上传图片后可以预览"></a>上传图片后可以预览</h4><p>可以我是汲取了广大人民的智慧。。。</p>
+<p>主要思路就是把图片读取成一个base64格式，然后再把他装到一个img标签中。实现预览功能，这里我给几个参考的资料，有的demo直接就可以跑，改一改就可以运用到自己的项目中。</p>
+<ol>
+<li><a href="http://www.cnblogs.com/axes/p/4603984.html" target="_blank" rel="external">移动前端—图片压缩上传实践</a></li>
+<li><a href="http://www.gbtags.com/gb/share/2991.htm" target="_blank" rel="external">使用HTML5的两个api，前端js完成图片压缩</a></li>
+<li><a href="http://blog.csdn.net/wuweitiandian/article/details/46472017" target="_blank" rel="external">使用HTML5 FILE API上传图片移动端缩略图兼容问题</a></li>
+</ol>
+<p>大概看完他们的思路以后，就能够实现这个功能了，但是他并不能保持宽高比适配屏幕，后面我优化了一下这部分。</p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>遇到的这四个问题我们来一一解决：</p>
+<ol>
+<li>在iPhone中，click()事件无效</li>
+<li>在微信安卓webview中，img标签使用background属性无效</li>
+<li>预览上传图片保证宽高比</li>
+<li>在某些安卓机型用rem单位不显示边框</li>
+</ol>
+<h4 id="在iPhone中click-事件无效"><a href="#在iPhone中click-事件无效" class="headerlink" title="在iPhone中click()事件无效"></a>在iPhone中click()事件无效</h4><p>这个问题在网上也有类似问题，<a href="http://stackoverflow.com/questions/14795944/jquery-click-events-not-working-in-ios" target="_blank" rel="external">地址</a>，但是我依照网上的办法都不行，但是我发现显式的在标签内通过onclick=”document.querySelector(‘input’).click()这种方式是可以调用的，所以我把所有的我需要隐式调用input的地方都绑定了这个<code>onclick=&quot;document.querySelector(&#39;input&#39;).click()</code>，然后逻辑方面我又用vue的@click绑定了一个方法来处理逻辑方面。</p>
+<h4 id="img标签使用background属性无效"><a href="#img标签使用background属性无效" class="headerlink" title="img标签使用background属性无效"></a>img标签使用background属性无效</h4><p>这个可能是安卓的微信webview支持的不好，因为在iphone和别的手机浏览器当中都可以支持，但是在安卓的微信webview不能显示，这个是兼容性的问题，所以最后我选择在<code>div</code>中加background。</p>
+<h4 id="预览上传图片保证宽高比"><a href="#预览上传图片保证宽高比" class="headerlink" title="预览上传图片保证宽高比"></a>预览上传图片保证宽高比</h4><p>这个其实也不难优化，因为上面的方法是把base64的图片放到一个img标签当中，所以没法去适配这个宽高比，如果把这个放到<code>div</code>的<code>background-image</code>属性当中，并把<code>background-size</code>设置成<code>contain</code>，把<code>background-color</code>设置成页面背景一样的颜色，这样就能模拟出浏览图片的功能了。</p>
+<h4 id="在某些安卓机型用rem单位不显示边框"><a href="#在某些安卓机型用rem单位不显示边框" class="headerlink" title="在某些安卓机型用rem单位不显示边框"></a>在某些安卓机型用rem单位不显示边框</h4><p>因为移动端使用的是rem为单位，用postcss去处理（就是在css中写px，后处理器去处理成rem），在1px时转换为rem单位可能不足屏幕显示的1px，则不会显示边框。解决办法就是当写<code>border</code>时加注释去避免处理器去处理这句css（<code>/*px*/</code>）</p>
+<p>整个过程大概就是这样吧，<a href="https://github.com/yatessss/yatessss.github.io/tree/master/demo/supplement-information" target="_blank" rel="external">我把这个页面放到了github上</a>，但是没有vue的环境跑不起来，如果有需要可以拷到自己vue项目下去尝试。代码垃圾，轻喷。。。。。。</p>
+<p>顺嘴说一句，那天晚上加班到两点，然后坐车回家，到地方付款的时候，发现银行维护没法付款，而且微信里也没有余额，正在想怎么办司机师傅说，没事赶紧回家吧等能付款的时候付了就好了，一句赶紧回家吧真实一阵感动啊。。。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag">#vue</a>
+          
+            <a href="/tags/文件上传/" rel="tag">#文件上传</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/17/webstorm项目下文件夹消失.md.html" rel="next" title="webstorm项目下文件夹消失">
+                <i class="fa fa-chevron-left"></i> webstorm项目下文件夹消失
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/08/使用vue完成知乎日报web版.html" rel="prev" title="使用vue完成知乎日报web版">
+                使用vue完成知乎日报web版 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/06/08/使用vue完成上传文件页面.html"
+     data-title="使用vue完成上传文件页面"
+     data-content=""
+     data-url="http://www.yatessss.com/2016/06/08/使用vue完成上传文件页面.html">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/08/使用vue完成上传文件页面.html"
+           data-title="使用vue完成上传文件页面" data-url="http://www.yatessss.com/2016/06/08/使用vue完成上传文件页面.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点信息
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xqch8.com1.z0.glb.clouddn.com/%E5%A4%B4%E5%83%8F4bed2e738bd4b31ca1ce4d1787d6277f9f2ff8a8.jpg"
+               alt="yatessss" />
+          <p class="site-author-name" itemprop="name">yatessss</p>
+          <p class="site-description motion-element" itemprop="description">凡求的必得到,寻的必找到,敲的必给他开</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div id="counter-busuanzi">
+          <span id="busuanzi_container_site_uv">
+             您是小站第<span id="busuanzi_value_site_uv"></span>位访客,<br />(づ￣3￣)づ╭❤～
+          </span>
+        </div>
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yatessss" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.tudou.com/home/_63884113" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 土豆
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#需求描述"><span class="nav-number">1.</span> <span class="nav-text">需求描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术点分析"><span class="nav-number">2.</span> <span class="nav-text">技术点分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#父子组件的动态渲染"><span class="nav-number">2.1.</span> <span class="nav-text">父子组件的动态渲染</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化数据和判断数据"><span class="nav-number">2.2.</span> <span class="nav-text">初始化数据和判断数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#input表单隐藏联动"><span class="nav-number">2.3.</span> <span class="nav-text">input表单隐藏联动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#上传图片后可以预览"><span class="nav-number">2.4.</span> <span class="nav-text">上传图片后可以预览</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">3.</span> <span class="nav-text">遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在iPhone中click-事件无效"><span class="nav-number">3.1.</span> <span class="nav-text">在iPhone中click()事件无效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img标签使用background属性无效"><span class="nav-number">3.2.</span> <span class="nav-text">img标签使用background属性无效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#预览上传图片保证宽高比"><span class="nav-number">3.3.</span> <span class="nav-text">预览上传图片保证宽高比</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在某些安卓机型用rem单位不显示边框"><span class="nav-number">3.4.</span> <span class="nav-text">在某些安卓机型用rem单位不显示边框</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yatessss</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="powered-by">
+  <span id="busuanzi_container_site_pv">
+    小站一共被浏览<span id="busuanzi_value_site_pv"></span>次
+  </span>
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yatessss"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("M9t60UMoz8vE3WEB9Mgb7Ug5-gzGzoHsz", "QAbOr1jkatmeYL1iNio5SkoQ");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>
