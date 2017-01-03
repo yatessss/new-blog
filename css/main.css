@@ -1513,7 +1513,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #505244;
+  background: #467aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2432,11 +2432,11 @@ body {
   }
 }
 #busuanzi_value_site_uv {
-  color: #eb0000;
+  color: #f00;
 }
 .fa-heart:before {
-  color: #eb0000;
+  color: #f00;
 }
 #busuanzi_value_site_pv {
-  color: #eb0000;
+  color: #f00;
 }
