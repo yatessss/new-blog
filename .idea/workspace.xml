@@ -2,90 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e394e7-34a0-41ec-9037-02b8f5e23767" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.deploy_git" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/new_blog_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/eps4664.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_posts/2016-04-29-重绘reflow与重排repaint.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/new-blog.iml" afterPath="$PROJECT_DIR$/.idea/new-blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/1992/06/20/下雨的时候最适合胡思乱想.html" afterPath="$PROJECT_DIR$/public/1992/06/20/下雨的时候最适合胡思乱想.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/1992/06/20/读完的书.html" afterPath="$PROJECT_DIR$/public/1992/06/20/读完的书.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/08/markdown.html" afterPath="$PROJECT_DIR$/public/2016/01/08/markdown.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/12/我为什么想要开一个博客.html" afterPath="$PROJECT_DIR$/public/2016/01/12/我为什么想要开一个博客.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/22/ES6study-1.html" afterPath="$PROJECT_DIR$/public/2016/01/22/ES6study-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/25/ES6study-2.html" afterPath="$PROJECT_DIR$/public/2016/01/25/ES6study-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/25/好的博客及文章.html" afterPath="$PROJECT_DIR$/public/2016/01/25/好的博客及文章.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/26/Charles解决跨域问题.html" afterPath="$PROJECT_DIR$/public/2016/01/26/Charles解决跨域问题.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/01/29/初学webpack遇到的坑.html" afterPath="$PROJECT_DIR$/public/2016/01/29/初学webpack遇到的坑.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/02/01/ES6study-3.html" afterPath="$PROJECT_DIR$/public/2016/02/01/ES6study-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/02/01/温柔的对待每一个人.html" afterPath="$PROJECT_DIR$/public/2016/02/01/温柔的对待每一个人.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/02/15/2015小总结.html" afterPath="$PROJECT_DIR$/public/2016/02/15/2015小总结.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/02/17/初学React遇到的坑.html" afterPath="$PROJECT_DIR$/public/2016/02/17/初学React遇到的坑.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/02/19/工作总结.html" afterPath="$PROJECT_DIR$/public/2016/02/19/工作总结.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/10/工作总结.html" afterPath="$PROJECT_DIR$/public/2016/03/10/工作总结.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/16/未来三个月自己的计划.html" afterPath="$PROJECT_DIR$/public/2016/03/16/未来三个月自己的计划.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/18/HTML5的学习.html" afterPath="$PROJECT_DIR$/public/2016/03/18/HTML5的学习.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/23/百度ife之html.html" afterPath="$PROJECT_DIR$/public/2016/03/23/百度ife之html.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/28/你不知道的JavaScript读书笔记——作用域.html" afterPath="$PROJECT_DIR$/public/2016/03/28/你不知道的JavaScript读书笔记——作用域.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" afterPath="$PROJECT_DIR$/public/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/29/内网穿透—外网可以访问到本地页面.html" afterPath="$PROJECT_DIR$/public/2016/03/29/内网穿透—外网可以访问到本地页面.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/30/微信JSSDK坑啊坑.html" afterPath="$PROJECT_DIR$/public/2016/03/30/微信JSSDK坑啊坑.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/03/31/你不知道的JavaScript读书笔记——this.html" afterPath="$PROJECT_DIR$/public/2016/03/31/你不知道的JavaScript读书笔记——this.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/04/15/WebStorage.html" afterPath="$PROJECT_DIR$/public/2016/04/15/WebStorage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/04/18/《JavaScript高级程序设计》读书笔记.html" afterPath="$PROJECT_DIR$/public/2016/04/18/《JavaScript高级程序设计》读书笔记.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/04/29/重绘reflow与重排repaint.html" afterPath="$PROJECT_DIR$/public/2016/04/29/重绘reflow与重排repaint.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/05/06/vue初体验.html" afterPath="$PROJECT_DIR$/public/2016/05/06/vue初体验.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/05/17/webstorm项目下文件夹消失.md.html" afterPath="$PROJECT_DIR$/public/2016/05/17/webstorm项目下文件夹消失.md.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/06/08/使用vue完成上传文件页面.html" afterPath="$PROJECT_DIR$/public/2016/06/08/使用vue完成上传文件页面.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/07/08/使用vue完成知乎日报web版.html" afterPath="$PROJECT_DIR$/public/2016/07/08/使用vue完成知乎日报web版.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/07/28/ES6模块化.html" afterPath="$PROJECT_DIR$/public/2016/07/28/ES6模块化.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/08/01/一个前端的工作方法总结.html" afterPath="$PROJECT_DIR$/public/2016/08/01/一个前端的工作方法总结.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/08/05/和https有关的一些事.html" afterPath="$PROJECT_DIR$/public/2016/08/05/和https有关的一些事.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/1992/06/index.html" afterPath="$PROJECT_DIR$/public/archives/1992/06/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/1992/index.html" afterPath="$PROJECT_DIR$/public/archives/1992/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/04/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/04/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/05/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/05/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/06/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/06/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/07/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/07/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/08/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/08/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/page/3/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/page/3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/page/4/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/page/4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/page/3/index.html" afterPath="$PROJECT_DIR$/public/archives/page/3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/page/4/index.html" afterPath="$PROJECT_DIR$/public/archives/page/4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/categories/JavaScript/index.html" afterPath="$PROJECT_DIR$/public/categories/JavaScript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/categories/vue/index.html" afterPath="$PROJECT_DIR$/public/categories/vue/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/categories/webstorm/index.html" afterPath="$PROJECT_DIR$/public/categories/webstorm/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/custom_style.css" afterPath="$PROJECT_DIR$/public/css/custom_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/5/index.html" afterPath="$PROJECT_DIR$/public/page/5/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/6/index.html" afterPath="$PROJECT_DIR$/public/page/6/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/7/index.html" afterPath="$PROJECT_DIR$/public/page/7/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/JavaScript/index.html" afterPath="$PROJECT_DIR$/public/tags/JavaScript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/WebStorage/index.html" afterPath="$PROJECT_DIR$/public/tags/WebStorage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/appid/index.html" afterPath="$PROJECT_DIR$/public/tags/appid/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/ngrok/index.html" afterPath="$PROJECT_DIR$/public/tags/ngrok/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/referer/index.html" afterPath="$PROJECT_DIR$/public/tags/referer/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/this/index.html" afterPath="$PROJECT_DIR$/public/tags/this/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/vue/index.html" afterPath="$PROJECT_DIR$/public/tags/vue/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/webstorm/index.html" afterPath="$PROJECT_DIR$/public/tags/webstorm/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/作用域/index.html" afterPath="$PROJECT_DIR$/public/tags/作用域/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/内网穿透/index.html" afterPath="$PROJECT_DIR$/public/tags/内网穿透/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/工作总结/index.html" afterPath="$PROJECT_DIR$/public/tags/工作总结/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/微信JSSDK/index.html" afterPath="$PROJECT_DIR$/public/tags/微信JSSDK/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/文件上传/index.html" afterPath="$PROJECT_DIR$/public/tags/文件上传/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/知乎日报/index.html" afterPath="$PROJECT_DIR$/public/tags/知乎日报/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/跨域/index.html" afterPath="$PROJECT_DIR$/public/tags/跨域/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/闭包/index.html" afterPath="$PROJECT_DIR$/public/tags/闭包/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/页面储存/index.html" afterPath="$PROJECT_DIR$/public/tags/页面储存/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/1992-06-20-读完的书.md" afterPath="$PROJECT_DIR$/source/_posts/1992-06-20-读完的书.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/CNAME" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.json" afterPath="$PROJECT_DIR$/db.json" />
     </list>
     <ignored path="new-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,21 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309">
+            <state relative-caret-position="18">
               <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/source/css/main.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,7 +38,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8037">
+            <state relative-caret-position="7614">
               <caret line="423" column="18" lean-forward="false" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
               <folding />
             </state>
@@ -140,7 +48,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45695">
+            <state relative-caret-position="43290">
               <caret line="2405" column="13" lean-forward="false" selection-start-line="2405" selection-start-column="13" selection-end-line="2405" selection-end-column="13" />
               <folding />
             </state>
@@ -150,18 +58,8 @@
       <file leaf-file-name="custom_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/custom_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="288">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="249" column="12" lean-forward="false" selection-start-line="249" selection-start-column="12" selection-end-line="249" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -179,6 +77,26 @@
       </file>
       <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.deploy_git/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/CNAME">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -258,8 +176,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="979" />
+    <option name="width" value="1440" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -292,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,10 +238,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hexo-yatessss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".deploy_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,14 +266,15 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/public/css/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/css/images" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/css/images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -379,7 +312,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -418,17 +351,18 @@
       <workItem from="1478229983227" duration="811000" />
       <workItem from="1483411533670" duration="47000" />
       <workItem from="1483411591855" duration="767000" />
+      <workItem from="1483418430392" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3734000" />
+    <option name="totallyTimeSpent" value="3985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="806" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24907847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24806201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,20 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/about/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.deploy_git/about/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -508,181 +428,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/header.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/head.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_layout.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/index.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/footer/footer.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/site-state.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toggle.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/highlight/theme.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/highlight/highlight.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/normalize.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/scaffolding.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/tables.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/helpers.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/base.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-author.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-author-links.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-blogroll.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-feed-link.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Pisces/_sidebar.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_macro/sidebar.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="10" lean-forward="false" selection-start-line="71" selection-start-column="10" selection-end-line="73" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/header.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/head.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_layout.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/index.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/footer/footer.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/site-state.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toggle.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/highlight/theme.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/highlight/highlight.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/normalize.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/scaffolding.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/tables.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/helpers.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/scaffolding/base.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-author.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-author-links.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-blogroll.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-feed-link.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Pisces/_sidebar.styl" />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_macro/sidebar.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/bower.json" />
     <entry file="file://$PROJECT_DIR$/themes/landscape/languages/zh-CN.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -690,33 +460,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/languages/zh-Hans.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/footer.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/source/css/main.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/languages/zh-Hans.yml" />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/footer.swig" />
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/main.styl" />
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45695">
+        <state relative-caret-position="43290">
           <caret line="2405" column="13" lean-forward="false" selection-start-line="2405" selection-start-column="13" selection-end-line="2405" selection-end-column="13" />
           <folding />
         </state>
@@ -724,7 +473,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8037">
+        <state relative-caret-position="7614">
           <caret line="423" column="18" lean-forward="false" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
           <folding />
         </state>
@@ -749,7 +498,7 @@
     <entry file="file://$PROJECT_DIR$/public/css/images/banner.jpg" />
     <entry file="file://$PROJECT_DIR$/public/css/custom_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
@@ -765,23 +514,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="249" column="12" lean-forward="false" selection-start-line="249" selection-start-column="12" selection-end-line="249" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml" />
     <entry file="file://$PROJECT_DIR$/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/CNAME">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -799,8 +533,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
+        <state relative-caret-position="18">
           <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.deploy_git/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
