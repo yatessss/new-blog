@@ -1,0 +1,1040 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <meta name="360-site-verification" content="66c13bfe289a4567ff8d8408eef5f949" />
+
+
+
+
+
+
+
+
+
+
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/custom_style.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="微信JSSDK,跨域,appid,referer," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="yatessss" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="update：今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。
+于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。
+然后我把分享后的这个地址复制了出来，在微信web开发者工具中打开查看，发现是JSSDK注册失败，报错：config:invalid signature，所以手机不能调微信获取地理位置的接口。
+查看了一下，是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信JSSDK坑啊坑">
+<meta property="og:url" content="http://www.yatessss.com/2016/03/30/微信JSSDK坑啊坑.html">
+<meta property="og:site_name" content="yatessss">
+<meta property="og:description" content="update：今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。
+于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。
+然后我把分享后的这个地址复制了出来，在微信web开发者工具中打开查看，发现是JSSDK注册失败，报错：config:invalid signature，所以手机不能调微信获取地理位置的接口。
+查看了一下，是">
+<meta property="og:updated_time" content="2017-01-03T03:29:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微信JSSDK坑啊坑">
+<meta name="twitter:description" content="update：今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。
+于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。
+然后我把分享后的这个地址复制了出来，在微信web开发者工具中打开查看，发现是JSSDK注册失败，报错：config:invalid signature，所以手机不能调微信获取地理位置的接口。
+查看了一下，是">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265504312420468000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 微信JSSDK坑啊坑 | yatessss </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '72832855-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?f6464d92b182a05585e6857779d41ec0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">yatessss</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">记录的地方</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            文章列表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '9aFGnEj1K3yKisZj-yBe','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                微信JSSDK坑啊坑
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-30T00:00:00+08:00" content="2016-03-30">
+              2016-03-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工作总结/" itemprop="url" rel="index">
+                    <span itemprop="name">工作总结</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/30/微信JSSDK坑啊坑.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/微信JSSDK坑啊坑.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/30/微信JSSDK坑啊坑.html" class="leancloud_visitors" data-flag-title="微信JSSDK坑啊坑">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="update："><a href="#update：" class="headerlink" title="update："></a>update：</h3><p>今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。</p>
+<p>于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。</p>
+<p>然后我把分享后的这个地址复制了出来，在微信web开发者工具中打开查看，发现是JSSDK注册失败，报错：<code>config:invalid signature</code>，所以手机不能调微信获取地理位置的接口。</p>
+<p>查看了一下，是微信分享后会在本来的url后面带两个参数<code>?from=groupmessage&amp;isappinstalled=0</code>。</p>
+<p>注册微信JSSDK是这样一个流程，前端首先先去访问公司的一个后台接口带一个?url=’’的参数，后台会根据我的参数去访问微信提供的接口，拿到timestamp，nonceStr，signature等参数并发送给前端，前端再去注册。</p>
+<p>所以我认为可能是因为我请求后台接口时的url直接是取得是<code>location.href</code>，带了微信分享后的那两个参数，所以后台处理的时候出现了错误，造成注册JSSDK时的签名无效。所以我把<code>location.href</code>改成了<code>location.origin + location.pathname</code>这样就把<code>？号</code>后的参数都去掉了，我想这样应该就保持了分享前后url的一致性，不会影响JSSDK的注册吧。结果其实没有效果。</p>
+<p>然后，又想我保持了url参数的一致性都没有作用，那是不是后台在处理的时候并不是取的我后面的这个参数，而是从请求头中拿了<code>referer</code>这个属性呢？</p>
+<p><strong>注：<code>referer</code>是请求头当中的一个字段，它可以告诉服务器我是从哪个url过来的。这个字段一般是用来防止盗链外链用的。有兴趣的同学可以搜索一下，我也是搜索得来的。</strong></p>
+<p>但是后台同学说他拿的就是我url后面的参数。</p>
+<p>那问题到底在哪里呢？其实很蠢因为我url没有进行encodeURI编码，所以造成了错误，所以以后一定要记得向后台传递url的时候<strong>一定要进行encodeURI编码！！！一定要进行encodeURI编码！！！一定要进行encodeURI编码！！！</strong></p>
+<p>虽说绕了一些弯路，但是也了解了一些原来没涉及到的知识，比如<code>location</code>中的一些方法（改天单独学习总结下），请求头当中的一些字段（也要系统的学习一下）。</p>
+<hr>
+<p>最近一段时间的工作不是很忙，给一个微信的项目加一些需求，主要就是通过微信JSSDK的获取地理位置的接口，拿到经纬度，完成一些功能。</p>
+<p>主要遇到了三个以后需要注意的地方吧，这里先描述一下：</p>
+<ol>
+<li>微信中AppId的作用。</li>
+<li>微信禁止不安全的https链接。</li>
+<li>跨域携带cookie</li>
+</ol>
+<h3 id="微信中AppId的作用"><a href="#微信中AppId的作用" class="headerlink" title="微信中AppId的作用"></a>微信中AppId的作用</h3><p>大家知道，开发手机页面的时候，调试时意见很麻烦的事情。因为在移动端你并不能想浏览器一样打开开发者工具，当报一些错误的时候，手机是无法查看的，所以一般我们就是在chrome的开发者工具中来模拟手机，比如屏幕大小、触摸事件等等。如果是一般的移动端页面，这样调试是可以的，但是如果JS中回去调<code>open.weixin.qq</code>授权登录的接口的话，在浏览器模拟的时候，就会显示<code>请在微信中打开</code>类似的字样。</p>
+<p>所以我们如果是开发微信中页面的时候，一般会有两种办法：</p>
+<ol>
+<li>先把<code>open.weixin.qq</code>授权登录的接口去掉，这样可以跳过微信验证的步骤，现在本地来开发页面。</li>
+<li>通过使用微信官方的<strong>微信web开发者工具</strong>来开发页面。</li>
+</ol>
+<p>其实两种方法是配合来使用的，在页面功能还没有做完的时候，我们可以在本地的浏览器中先开发功能，因为浏览器中有一些插件可以来跨域，携带cookie等等方便开发，但是在浏览器中并不能调用JSSDK的方法。功能开发完毕要跑通整个流程的时候，就可以在web开发者工具中调试，因为web开发者工具中可以调用微信的JSSDK的方法和授权登录等等，但是在web开发者工具中只能运行公众号后台绑定的安全域名下的页面，所以需要我们上到测试环境下去跑。</p>
+<p>而我遇到的第一个问题就是：在公众号后台已经添加了我为开发者，但是我在web开发者工具中还是无法打开后台绑定的安全域名下的页面。起初我还以为是不是公众号没有绑定这个域名呢？导致我无法打开页面，后来到公众号后台查看并不是这样，经过排查是因为，后台接口用的appid和公众号的appid不匹配造成的。那appid的作用是什么呢？</p>
+<p>appid其实就是起到一个标识的作用，有了appid微信就会知道你是哪一个公众账号，知道了是哪一个公众号，他就会在后台查看你这个公众号下有哪些安全域名，公众号开通了哪些功能，有哪些权限以及一系列的信息。</p>
+<p>比如：如果你打开的网址和你发出的appid对应的公众号绑定的安全域名不匹配时，微信会禁止你去打开这个链接；如果你要调试页面，微信会到后台去找你所用的微信号是不是在appid对应的公众号下的开发者名单中有没有你，如果没有微信也会禁止你去调试这个页面；公众号后台也会有很多功能，微信通过appid也能来查询你有没有开通这个功能。</p>
+<p>所以，因为后台接口用的是另一个appid，微信认为开打的是另一个公众号的页面，而这个公众号的开发者名单中并没有我，所以我没有办法去调试。</p>
+<hr>
+<h3 id="微信禁止不安全的https链接"><a href="#微信禁止不安全的https链接" class="headerlink" title="微信禁止不安全的https链接"></a>微信禁止不安全的https链接</h3><p>经过第一个问题之后，我可以在web开发者工具中调试我的页面了，我又遇到了另一个奇怪的问题：我在开发者工具中整个页面功能没有问题，但是在微信当中打开，就会出现错误。当时，特别困惑因为在开发者工具中并没有报任何错误，而在微信中你无法看到错误信息，所以到底是哪个位置出现了错误你也不清楚。</p>
+<p>经过了上网查询，自己排查，知道了原因是这样的。</p>
+<p>因为后台接口走的是https，后台的https证书只对应线上的那个域名，而在测试环境中因为接口域名和证书并不对应，所以微信认为这个链接是不安全的，而微信会禁止不安全的https链接。而在web开发者工具中是可以访问这样不安全的https的连接的，所以就会出现上述的问题。</p>
+<p>所以，在今后遇到这样web开发者工具和微信行为不一致的时候，我们可以先查看一下是不是我们有https的接口是不安全的。</p>
+<hr>
+<h3 id="withCredentials跨域请求"><a href="#withCredentials跨域请求" class="headerlink" title="withCredentials跨域请求"></a>withCredentials跨域请求</h3><p>我们首先应该知道这个知识：默认情况下，ajxa跨域请求是不会发送用户认证凭据的（cookie、HTTP认证及客户端SSL证明等）。</p>
+<p>有什么方法可以解决这个问题呢？可以通过设置ajax的<code>withCredentials</code>属性为<code>true</code>来指定某个请求是可以发送用户认证凭据。不过要注意：支持withCredentials属性的浏览器有Firefox 3.5+、Safari 4+和Chrome。IE10及更早版本都不支持。</p>
+<p>如果设置这个属性的话，请求头中就会带上cookie，而后台要接受这个凭据的话，在服务端的响应头必须添加<code>Access-Control-Allow-Credentials: true</code>，并且<strong>服务端需指定一个域名（Access-Control-Allow-Origin:www.xxxxxx.com），而不能使用泛型（Access-Control-Allow-Origin: * ）</strong>这样我们就可以跨域发送cookie了。</p>
+<p>如果是原生的话大概是这样：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">xhr.open(<span class="string">'GET'</span>, <span class="string">'http://www.xxx.com/api'</span>);</span><br><span class="line">xhr.withCredentials = <span class="literal">true</span>;</span><br><span class="line">xhr.onload = onLoadHandler;</span><br><span class="line">xhr.send();</span><br></pre></td></tr></table></figure>
+<p>如果使用类库的话（如zepto）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line"> 	url: url,</span><br><span class="line"> 	type: <span class="string">'get'</span>,</span><br><span class="line"> 	data:  data,</span><br><span class="line"> 	dataType: <span class="string">'json'</span>,</span><br><span class="line"> 	xhrFields: &#123;</span><br><span class="line">   		withCredentials: <span class="literal">true</span></span><br><span class="line"> 	&#125;,</span><br></pre></td></tr></table></figure>
+<p><code>zepto</code>的<code>ajax</code>中有这样一个参数：<code>xhrFields</code> (默认： none): 一个对象包含的属性被逐字复制到XMLHttpRequest的实例。</p>
+<p>大概就是这么多吧，如果想起来在添加。</p>
+<p>最后在吐槽一下吧，生活不如意之事十之八九</p>
+<p>总感觉生活总在你比较满意的时候给你一记当头棒喝，本来最近还活的好好的，经过几个月的努力学习算是顺利的转行，也在一直学习成长，对自己最近的表现也比较满意。而上帝可能觉得你近一阶段有些骄傲和浮躁了，需要给你提醒一下，所以最近遇到了一个小挫折，也让自己知道了一些不足，就像盖楼，基础往往决定你能不能盖一座高楼，而技术决定你能盖多高，基础确实是一个必要条件，而我现在就处在半瓶水响叮当的阶段，对一些基础只是知其然不知其所以然，往往会用、知道，但是没有深究原理。这就对出现的一些问题在解决起来，可能会毫无头绪，依靠网络未尝不是一个办法，但往往不是最好的办法，如果了解原理你可能对出现问题的原因追根溯源，但是你如果只找到这个问题的解决办法，下次出现因为这个原理出现的其他问题你依然会没有头绪。</p>
+<p>再有，听清问题，想好之后再去回答，说的每句话应该是绝对经过思考的  尤其在不熟悉的人之间。</p>
+<p>小品里说过嘛，车轱辘往前转，人要往前看，夯实基础，拥抱新技术，是我未来一年的目标，不卑不亢，不喜不悲，希望下次再战。</p>
+<p>以上。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/微信JSSDK/" rel="tag">#微信JSSDK</a>
+          
+            <a href="/tags/跨域/" rel="tag">#跨域</a>
+          
+            <a href="/tags/appid/" rel="tag">#appid</a>
+          
+            <a href="/tags/referer/" rel="tag">#referer</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/29/内网穿透—外网可以访问到本地页面.html" rel="next" title="内网穿透—外网可以访问到本地页面">
+                <i class="fa fa-chevron-left"></i> 内网穿透—外网可以访问到本地页面
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/31/你不知道的JavaScript读书笔记——this.html" rel="prev" title="《你不知道的JavaScript》读书笔记——this">
+                《你不知道的JavaScript》读书笔记——this <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/03/30/微信JSSDK坑啊坑.html"
+     data-title="微信JSSDK坑啊坑"
+     data-content=""
+     data-url="http://www.yatessss.com/2016/03/30/微信JSSDK坑啊坑.html">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/30/微信JSSDK坑啊坑.html"
+           data-title="微信JSSDK坑啊坑" data-url="http://www.yatessss.com/2016/03/30/微信JSSDK坑啊坑.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点信息
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xqch8.com1.z0.glb.clouddn.com/%E5%A4%B4%E5%83%8F4bed2e738bd4b31ca1ce4d1787d6277f9f2ff8a8.jpg"
+               alt="yatessss" />
+          <p class="site-author-name" itemprop="name">yatessss</p>
+          <p class="site-description motion-element" itemprop="description">凡求的必得到,寻的必找到,敲的必给他开</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div id="counter-busuanzi">
+          <span id="busuanzi_container_site_uv">
+             您是小站第<span id="busuanzi_value_site_uv"></span>位访客,<br />(づ￣3￣)づ╭❤～
+          </span>
+        </div>
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yatessss" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.tudou.com/home/_63884113" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 土豆
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#update："><span class="nav-number">1.</span> <span class="nav-text">update：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微信中AppId的作用"><span class="nav-number">2.</span> <span class="nav-text">微信中AppId的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微信禁止不安全的https链接"><span class="nav-number">3.</span> <span class="nav-text">微信禁止不安全的https链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#withCredentials跨域请求"><span class="nav-number">4.</span> <span class="nav-text">withCredentials跨域请求</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yatessss</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="powered-by">
+  <span id="busuanzi_container_site_pv">
+    小站一共被浏览<span id="busuanzi_value_site_pv"></span>次
+  </span>
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yatessss"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("M9t60UMoz8vE3WEB9Mgb7Ug5-gzGzoHsz", "QAbOr1jkatmeYL1iNio5SkoQ");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>
