@@ -1019,49 +1019,6 @@
   </entry>
   
   <entry>
-    <title>内网穿透—外网可以访问到本地页面</title>
-    <link href="http://www.yatessss.com/2016/03/29/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E2%80%94%E5%A4%96%E7%BD%91%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%88%B0%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2.html"/>
-    <id>http://www.yatessss.com/2016/03/29/内网穿透—外网可以访问到本地页面.html</id>
-    <published>2016-03-28T16:00:00.000Z</published>
-    <updated>2017-01-03T03:29:55.000Z</updated>
-    
-    <content type="html">&lt;p&gt;今天在解决跨域问的时候，误打误撞解决了一个原来困扰我的问题。&lt;/p&gt;
-&lt;p&gt;很多时候会有这样的问题，想要把本地的页面发送给别人看，不可能一个demo页面都去部署到线上去，那该怎么办？&lt;/p&gt;
-&lt;p&gt;如果是内网问题还好解决，如果用的是webstorm的话，webstorm本身就可以自己在本地起一个服务。在webstorm的偏好设置里面，有一个&lt;code&gt;debugger&lt;/code&gt;选项，只要把&lt;code&gt;Built-in server&lt;/code&gt;这个选项勾选，webstorm会自己启动一个服务，只要把网址的&lt;code&gt;localhost&lt;/code&gt;改成自己机器的ip地址，只要机器是在同一个网内，就可以访问到本地的页面了。&lt;/p&gt;
-&lt;p&gt;还有一种方式是，利用node在本地起一个服务，方法是安装一个npm包&lt;code&gt;http-server&lt;/code&gt;，运行&lt;code&gt;npm install http-server -g&lt;/code&gt;，安装完成之后直接输入命令&lt;code&gt;$ http-server&lt;/code&gt;，他就会在本地的8080端口去起一个服务，本地所有的文件就都可以访问到了，只要在起的服务的地址后面再加上文件的路径就可以了。&lt;/p&gt;
-&lt;p&gt;如果是外网呢？我在知乎上看到了一个答案，(&lt;a href=&quot;https://www.zhihu.com/question/25456655&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;)。&lt;/p&gt;
-&lt;p&gt;具体做法是这样的，我们需要一个工具&lt;code&gt;ngrok&lt;/code&gt;，但是好像这个已经被墙了，国内有很多替代的工具，可以自行搜索一下，这里我找到两个：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://natapp.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;natapp.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ngrok.cc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunny-Ngrok&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;具体的使用方法也很简单，以natapp来举例。只要下载相应操作系统的客户端，然后把它解压，cd进入到解压后的目录中，运行命令&lt;code&gt;./ngrok -config ngrok.cfg -subdomain myapp 80&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这里需要注意&lt;code&gt;myapp&lt;/code&gt;这个是你要自己定义的域名，80是你要映射到本地的端口，然后访问&lt;code&gt;http://myapp.ngrok.natapp.cn&lt;/code&gt;就可以和本地联通了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;现在其实只要配合node在本地起的服务就可以完成外网访问本地页面了，使用&lt;code&gt;http-server&lt;/code&gt;起一个本地的服务是8080端口，所以我只需要把&lt;code&gt;ngrok&lt;/code&gt;映射到8080端口就可以了，即运行指令&lt;code&gt;./ngrok -config ngrok.cfg -subdomain myapp 8080&lt;/code&gt;，这样再访问自定义的域名之后，就可以顺利访问到本地了。&lt;/p&gt;
-&lt;p&gt;最后，很多选项都可以在&lt;code&gt;ngrok.cfg&lt;/code&gt;这个文件里修改，并且&lt;code&gt;ngrok&lt;/code&gt;的用途不仅仅简单地是这一个，他还有很多用途，有兴趣的具体可以去网上了解一下，因为我对&lt;code&gt;ngrok&lt;/code&gt;的了解也不是很多。&lt;/p&gt;
-&lt;p&gt;在解决这个问题之后，我本地的页面已经可以跑在微信里了，再配合我原来记录的&lt;a href=&quot;http://www.yatessss.com/2016/01/26/Charles%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/&quot;&gt;手机调试本地页面的跨域问题&lt;/a&gt;，就可以解决接口跨域的问题了，不过这个解决办法挺笨的，更好的解决办法我还在找，但是还没有找到。&lt;/p&gt;
-&lt;p&gt;最好还是和后台沟通可以把测试服务器的接口改成所有域名都能够访问，这样还是最方便的。&lt;/p&gt;
-&lt;p&gt;以上。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天在解决跨域问的时候，误打误撞解决了一个原来困扰我的问题。&lt;/p&gt;
-&lt;p&gt;很多时候会有这样的问题，想要把本地的页面发送给别人看，不可能一个demo页面都去部署到线上去，那该怎么办？&lt;/p&gt;
-&lt;p&gt;如果是内网问题还好解决，如果用的是webstorm的话，webstorm本身
-    
-    </summary>
-    
-      <category term="工作总结" scheme="http://www.yatessss.com/categories/%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
-    
-    
-      <category term="ngrok" scheme="http://www.yatessss.com/tags/ngrok/"/>
-    
-      <category term="内网穿透" scheme="http://www.yatessss.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>《你不知道的JavaScript》读书笔记——闭包</title>
     <link href="http://www.yatessss.com/2016/03/29/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E9%97%AD%E5%8C%85.html"/>
     <id>http://www.yatessss.com/2016/03/29/你不知道的JavaScript读书笔记——闭包.html</id>
@@ -1117,6 +1074,49 @@
       <category term="JavaScript" scheme="http://www.yatessss.com/tags/JavaScript/"/>
     
       <category term="闭包" scheme="http://www.yatessss.com/tags/%E9%97%AD%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内网穿透—外网可以访问到本地页面</title>
+    <link href="http://www.yatessss.com/2016/03/29/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E2%80%94%E5%A4%96%E7%BD%91%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%88%B0%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2.html"/>
+    <id>http://www.yatessss.com/2016/03/29/内网穿透—外网可以访问到本地页面.html</id>
+    <published>2016-03-28T16:00:00.000Z</published>
+    <updated>2017-01-03T03:29:55.000Z</updated>
+    
+    <content type="html">&lt;p&gt;今天在解决跨域问的时候，误打误撞解决了一个原来困扰我的问题。&lt;/p&gt;
+&lt;p&gt;很多时候会有这样的问题，想要把本地的页面发送给别人看，不可能一个demo页面都去部署到线上去，那该怎么办？&lt;/p&gt;
+&lt;p&gt;如果是内网问题还好解决，如果用的是webstorm的话，webstorm本身就可以自己在本地起一个服务。在webstorm的偏好设置里面，有一个&lt;code&gt;debugger&lt;/code&gt;选项，只要把&lt;code&gt;Built-in server&lt;/code&gt;这个选项勾选，webstorm会自己启动一个服务，只要把网址的&lt;code&gt;localhost&lt;/code&gt;改成自己机器的ip地址，只要机器是在同一个网内，就可以访问到本地的页面了。&lt;/p&gt;
+&lt;p&gt;还有一种方式是，利用node在本地起一个服务，方法是安装一个npm包&lt;code&gt;http-server&lt;/code&gt;，运行&lt;code&gt;npm install http-server -g&lt;/code&gt;，安装完成之后直接输入命令&lt;code&gt;$ http-server&lt;/code&gt;，他就会在本地的8080端口去起一个服务，本地所有的文件就都可以访问到了，只要在起的服务的地址后面再加上文件的路径就可以了。&lt;/p&gt;
+&lt;p&gt;如果是外网呢？我在知乎上看到了一个答案，(&lt;a href=&quot;https://www.zhihu.com/question/25456655&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;)。&lt;/p&gt;
+&lt;p&gt;具体做法是这样的，我们需要一个工具&lt;code&gt;ngrok&lt;/code&gt;，但是好像这个已经被墙了，国内有很多替代的工具，可以自行搜索一下，这里我找到两个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://natapp.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;natapp.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ngrok.cc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunny-Ngrok&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;具体的使用方法也很简单，以natapp来举例。只要下载相应操作系统的客户端，然后把它解压，cd进入到解压后的目录中，运行命令&lt;code&gt;./ngrok -config ngrok.cfg -subdomain myapp 80&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这里需要注意&lt;code&gt;myapp&lt;/code&gt;这个是你要自己定义的域名，80是你要映射到本地的端口，然后访问&lt;code&gt;http://myapp.ngrok.natapp.cn&lt;/code&gt;就可以和本地联通了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;现在其实只要配合node在本地起的服务就可以完成外网访问本地页面了，使用&lt;code&gt;http-server&lt;/code&gt;起一个本地的服务是8080端口，所以我只需要把&lt;code&gt;ngrok&lt;/code&gt;映射到8080端口就可以了，即运行指令&lt;code&gt;./ngrok -config ngrok.cfg -subdomain myapp 8080&lt;/code&gt;，这样再访问自定义的域名之后，就可以顺利访问到本地了。&lt;/p&gt;
+&lt;p&gt;最后，很多选项都可以在&lt;code&gt;ngrok.cfg&lt;/code&gt;这个文件里修改，并且&lt;code&gt;ngrok&lt;/code&gt;的用途不仅仅简单地是这一个，他还有很多用途，有兴趣的具体可以去网上了解一下，因为我对&lt;code&gt;ngrok&lt;/code&gt;的了解也不是很多。&lt;/p&gt;
+&lt;p&gt;在解决这个问题之后，我本地的页面已经可以跑在微信里了，再配合我原来记录的&lt;a href=&quot;http://www.yatessss.com/2016/01/26/Charles%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/&quot;&gt;手机调试本地页面的跨域问题&lt;/a&gt;，就可以解决接口跨域的问题了，不过这个解决办法挺笨的，更好的解决办法我还在找，但是还没有找到。&lt;/p&gt;
+&lt;p&gt;最好还是和后台沟通可以把测试服务器的接口改成所有域名都能够访问，这样还是最方便的。&lt;/p&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在解决跨域问的时候，误打误撞解决了一个原来困扰我的问题。&lt;/p&gt;
+&lt;p&gt;很多时候会有这样的问题，想要把本地的页面发送给别人看，不可能一个demo页面都去部署到线上去，那该怎么办？&lt;/p&gt;
+&lt;p&gt;如果是内网问题还好解决，如果用的是webstorm的话，webstorm本身
+    
+    </summary>
+    
+      <category term="工作总结" scheme="http://www.yatessss.com/categories/%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="ngrok" scheme="http://www.yatessss.com/tags/ngrok/"/>
+    
+      <category term="内网穿透" scheme="http://www.yatessss.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
