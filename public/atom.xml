@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yatessss.com/"/>
-  <updated>2016-12-02T09:23:30.000Z</updated>
+  <updated>2017-01-03T03:29:55.000Z</updated>
   <id>http://www.yatessss.com/</id>
   
   <author>
@@ -16,11 +16,75 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://www.yatessss.com/2017/01/03/Untitled.html"/>
+    <id>http://www.yatessss.com/2017/01/03/Untitled.html</id>
+    <published>2017-01-03T03:29:55.000Z</published>
+    <updated>2017-01-03T03:29:55.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写在2016年末</title>
+    <link href="http://www.yatessss.com/2017/01/01/%E5%86%99%E5%9C%A82016%E5%B9%B4%E6%9C%AB.html"/>
+    <id>http://www.yatessss.com/2017/01/01/写在2016年末.html</id>
+    <published>2016-12-31T16:00:00.000Z</published>
+    <updated>2017-01-03T03:47:08.000Z</updated>
+    
+    <content type="html">&lt;p&gt;回想起2016年是不是什么都记不起来了 对啊一年又匆忙的过去了 这一年和往年并没有任何不一样 还是一样谨慎 一样平凡 不管是在哪方面 都是那么普通 我一直都和别人说 我的一生就是谨慎的一生  人生一直都在既定的轨道上前行 没有任何出格的事情  学习 工作 生活  &lt;/p&gt;
+&lt;p&gt;昨天和朋友讨论 到底什么算是出格的事情呢？  当时想了很久 也没有想到一个满意的答案  今天在想起来 到底什么才算是出格的事情呢  我想就是你为了不想在既定的轨道上前行 所做的努力 这算不算应该叫做出格的事情   我想了很久 觉得这个答案在我心里是认可的  &lt;/p&gt;
+&lt;p&gt;前几天看过一个谈话类的节目  里面说  现在社会中仿佛每个人的选择有很多种 但其实在每个人的选择是很少的 确实啊  我总会想 我想当一个木匠  当一个画家  但是如果你放弃了现在的工作 你用什么来立命呢？ 所以藏在心里的梦想 敢去追逐  打破既定那就是出格了 &lt;/p&gt;
+&lt;p&gt;我呢 只能是藏在这个面具下面 谨慎的前行了吧 现在在回北京的火车上写下了自己想到的一些  说矫情也确实挺矫情的  早晨出门的时候天还没亮 说是回家回家  但是真的在家陪伴家人的时间却又是多少?  大部分时间都是和朋友一起玩  说起来也挺惭愧的  拿这个当借口元旦放假回来了 &lt;/p&gt;
+&lt;p&gt;往常我如果只放三天的假 我是不会回家的 因为在路上就花去了大部分时间  我回去是有私心的 我以为可以感动别人 其实只是感动了自己而已  仅此而已 现在看起来也只能是无奈的笑笑了  我原来说过一句话：人生无非两种情况 当初为什么那么傻逼 当初为什么不那么傻逼  对 我就是回来践行当初为什么不那么傻逼  &lt;/p&gt;
+&lt;p&gt;起码一些东西明白了 心里就能不时常去牵挂了 朋友说我是活在自己世界里的一个人 固执倔强 有自己的想法 但是不自信 太敏感 有些事其实不用去想那么多 都没什么的  我想了一下还真是挺符合我的 我是太容易想多了 把一些捕风捉影的事情看得太重了  这也就给自己造了一个笼子  熟悉了 都不敢在天空了中飞翔了  &lt;/p&gt;
+&lt;p&gt;总是很羡慕电影里的男主角  总是很有勇气的和女主角表白  没有那么多顾虑 很羡慕这种坦然  不知道自己什么时候也可以变成这样的坦然的人&lt;/p&gt;
+&lt;p&gt;说了这么多 但标题是总结2016 那我还是应该努力回想起今年到底做了什么事 是可以让我小小总结一下的&lt;br&gt;第一个应该是工作吧  在这一年里工作中 慢慢从一个新手变成了一个熟手 大部分工作都可以自己独立完成了 从一开始的一个菜鸟 慢慢成长了起来 说起现在的工作 说不上有多喜欢 但是并不反感  很享受那种独立完成工作的成就感 学习新东西时候的喜悦感  那种体验让我觉得 工作就应该是这样的 总可以给你一个新鲜感 让你孜孜不倦的探索 收获  整个一年 上半年都应该属于一个刚刚入门的状态 看到什么都特别好奇 看过react node webpack  等等等等 但是回过头来你发现你还是什么都不会 你只是为了看而在看 当用的时候你依然什么都不会  基本上上半年就属于这么一个贪多嚼不烂的状态  那会还信心满满的去了锤子面个了个试结果可想而知  下半年因为公司新来了一个技术不错的同事  我们的技术从原来的grunt+zepto这种形式转变成了vue+webpack+postcss 这样的套路  从那会就开始学习vue  至今已经半年多了 现在把vue用到工作中已经得心应手了 期间也为了练习vue 写了知乎日报这样的小项目去练手 但是我深知自己在基础方面的是很缺乏的 所以接下来的一段时间应该会重点看看基础上的东西 哦对了 我最近一直在看react+redux 的技术栈  为了可以练手 我还是准备写知乎日报的小项目 因为对他的接口逻辑都熟悉一些 在基友的帮助下 现在这个项目已经完成了百分之三十左右了 希望在年前我可以把 这个项目写完 然后可以熟悉了react方面的一些知识  工作也不是说一口可以吃成一个胖子的 继续努力吧&lt;/p&gt;
+&lt;p&gt;生活方面也有一些变化吧 从原来的一起合租变成了自己住 再也没有同学在一起插科打诨了 时常会聚一下 但是大多数时候还是自己一个人在家 还好我是一个比较安静的人 可以适应那种独处的生活 也因为我有一把琴吧  闲着无聊的大多数时间还是跟他打交道的  排解一下无聊的生活  周末在家每周会打扫打扫家 给自己一个新的心情吧  吃饭成了最大的难题 到底周末吃什么呢？ 想原来一起做饭吃的日子还是很怀念的呀 自己还是坚持着弹琴录歌  这是第三年了 希望我还能坚持下去  在着新的一年里 我想把自己的生活 过的更有趣一点 我要尝试学习写歌 因为作为一个矫情的人 肯定会有很多抱怨的可以写成歌词吧  希望这个愿望可以在新的一年里成真  既然都说到这里了  我先放词为敬  昨天朋友说我活在自己的世界里 所以我这么写了些：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我想逃离我的世界 不想自信倔强独自表演&lt;/p&gt;
+&lt;p&gt;我想逃离我的世界 不想凭空想象蜜语甜言&lt;/p&gt;
+&lt;p&gt;我想活到你的世界 重要的角色由你扮演&lt;/p&gt;
+&lt;p&gt;我想活到你的世界 分享秘密随风飘到天边&lt;/p&gt;
+&lt;p&gt;我想逃离我的世界 心理支撑不下大大的冒险&lt;/p&gt;
+&lt;p&gt;我想逃离我的世界 双手拥抱摸到自己的肩&lt;/p&gt;
+&lt;p&gt;我想活到你的世界 共同坚强坦然面对一切&lt;/p&gt;
+&lt;p&gt;我想活到你的世界 一起 一起走到海角天边&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;矫情死了 &lt;/p&gt;
+&lt;p&gt;情感方面 总是缺少一些果决 缺少了一些更喜欢 上面都那么矫情的说了一些 所以只能希望可以发现那个人吧 &lt;/p&gt;
+&lt;p&gt;回去就准备剪断那个三千烦恼丝吧  在新的一年里 能从头开始  为了能做一个有趣的 自在如风的人去努力吧  &lt;/p&gt;
+&lt;p&gt;在这人世间 有些路是非要单独一个去面对 单独一个人去跋涉的 路再长再远 夜再黑再暗  也得独自默默地走下去 ———— 席慕蓉&lt;/p&gt;
+&lt;p&gt;就这样吧 让我默默carry一会 &lt;/p&gt;
+&lt;p&gt;再加一句吧   电影里说，“你我之间本无缘分，全靠我死撑，我明白的。”以前觉得这话直抵泪点，现在却觉得，说白了，爱一个人真的就是自己一个人的事儿，得拿出过日子一样的态度。只要还想继续，就大不了哭一场，硬着头皮爱下去。世间什么缘分不缘分，都是撑来的。——七堇年&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;回想起2016年是不是什么都记不起来了 对啊一年又匆忙的过去了 这一年和往年并没有任何不一样 还是一样谨慎 一样平凡 不管是在哪方面 都是那么普通 我一直都和别人说 我的一生就是谨慎的一生  人生一直都在既定的轨道上前行 没有任何出格的事情  学习 工作 生活  &lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="杂事二三" scheme="http://www.yatessss.com/categories/%E6%9D%82%E4%BA%8B%E4%BA%8C%E4%B8%89/"/>
+    
+    
+      <category term="杂事二三" scheme="http://www.yatessss.com/tags/%E6%9D%82%E4%BA%8B%E4%BA%8C%E4%B8%89/"/>
+    
+  </entry>
+  
+  <entry>
     <title>时间是个贼啊</title>
     <link href="http://www.yatessss.com/2016/12/02/%E6%97%B6%E9%97%B4%E6%98%AF%E4%B8%AA%E8%B4%BC%E5%95%8A.html"/>
     <id>http://www.yatessss.com/2016/12/02/时间是个贼啊.html</id>
     <published>2016-12-01T16:00:00.000Z</published>
-    <updated>2016-12-02T09:23:30.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;无事 今天看了岁月神偷&lt;br&gt;电影缓缓的把那份感动讲述了出来&lt;br&gt;看到了生死之外其实所有的事情都会过去&lt;br&gt;人生本来就是这样一脚佳一脚难&lt;br&gt;走呀走呀&lt;br&gt;就走了到苦海的那边去&lt;/p&gt;
 &lt;p&gt;可能是因为我还没当父母&lt;br&gt;没有活在当时的那个环境下&lt;br&gt;感受不到真的生活艰难&lt;br&gt;感受不到为人父母的那份不易&lt;br&gt;父母辛辛苦苦一辈子不就是为了我们生活的更好嘛  &lt;/p&gt;
@@ -51,7 +115,7 @@
     <link href="http://www.yatessss.com/2016/10/17/%E5%89%8D%E7%AB%AF%E7%9B%B4%E6%8E%A5%E7%94%9F%E6%88%90%E5%8F%8A%E4%B8%8B%E8%BD%BD%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%92%8C%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9BSDK%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.html"/>
     <id>http://www.yatessss.com/2016/10/17/前端直接生成及下载二维码和使用七牛SDK上传图片.html</id>
     <published>2016-10-16T16:00:00.000Z</published>
-    <updated>2016-11-10T09:09:46.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;最近工作比较紧张，除了日常的小需求之外，还做了一个给商户用的后台。技术栈除了vue之外，还用到了&lt;code&gt;materialize&lt;/code&gt;这个UI库&lt;a href=&quot;https://github.com/dogfalo/materialize/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地址&lt;/a&gt;，但是这个库有一个缺点，那就是强依赖与jquery。&lt;/p&gt;
 &lt;p&gt;因为是后台，依赖juqery倒也没什么，因为是在pc端使用对文件大小的要求不是特别高，而且基于juqery的插件特别多，有些地方如果自己去处理可能会存在一些不兼容的问题，用插件会避免很多怪异的问题。&lt;/p&gt;
@@ -106,7 +170,7 @@
     <link href="http://www.yatessss.com/2016/09/30/%E5%88%9D%E8%AF%95%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9.html"/>
     <id>http://www.yatessss.com/2016/09/30/初试微信小程序需要注意的地方.html</id>
     <published>2016-09-29T16:00:00.000Z</published>
-    <updated>2016-10-17T08:30:02.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;最近微信小程序刚出来，挺火的，自己也准备尝试一下。文档什么的官方都已经提供而且很全面了，所以不准备介绍小程序呢的用法。&lt;/p&gt;
 &lt;p&gt;来总结一下自己在尝试微信小程序时遇到的一些需要注意的地方吧。&lt;/p&gt;
@@ -196,7 +260,7 @@
     <link href="http://www.yatessss.com/2016/08/05/%E5%92%8Chttps%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B.html"/>
     <id>http://www.yatessss.com/2016/08/05/和https有关的一些事.html</id>
     <published>2016-08-04T16:00:00.000Z</published>
-    <updated>2016-08-11T08:29:55.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;今天技术开了一次分享会，主要是分享了http和https相关的一些知识。&lt;/p&gt;
 &lt;p&gt;其中很多知识了解，但是不是特别清楚，听完了对https更清楚了一些。&lt;/p&gt;
@@ -260,7 +324,7 @@
     <link href="http://www.yatessss.com/2016/08/01/%E4%B8%80%E4%B8%AA%E5%89%8D%E7%AB%AF%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.html"/>
     <id>http://www.yatessss.com/2016/08/01/一个前端的工作方法总结.html</id>
     <published>2016-07-31T16:00:00.000Z</published>
-    <updated>2016-08-04T08:30:07.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;进入前端也半年多了，在工作中也学到了一些帮助自己提高工作效率的工具、方法，和大家分享一下，知识需要慢慢的积累，光读文章是不够的需要结合平时的实践才能融会贯通，这篇文章不会涉及很多知识，会分享一些平时工作中用到的工具、方法，主要偏向于移动端的开发方面。&lt;/p&gt;
 &lt;h3 id=&quot;跨域问题&quot;&gt;&lt;a href=&quot;#跨域问题&quot; class=&quot;headerlink&quot; title=&quot;跨域问题&quot;&gt;&lt;/a&gt;跨域问题&lt;/h3&gt;&lt;p&gt;平时在调试接口的时候，难免会碰到一系列问题，因为在本地调试的时候和线上会有不同，可能会碰到跨域，和未登录的问题。&lt;/p&gt;
@@ -341,7 +405,7 @@
     <link href="http://www.yatessss.com/2016/07/28/ES6%E6%A8%A1%E5%9D%97%E5%8C%96.html"/>
     <id>http://www.yatessss.com/2016/07/28/ES6模块化.html</id>
     <published>2016-07-27T16:00:00.000Z</published>
-    <updated>2016-07-28T13:02:22.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;这几天在看vuex，模块引入这块看的有些迷，所以看了&lt;a href=&quot;http://es6.ruanyifeng.com/#docs/module&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阮大大关于模块化这部分的教程&lt;/a&gt;。然后总结了一些常用的部分。&lt;/p&gt;
 &lt;h3 id=&quot;export&quot;&gt;&lt;a href=&quot;#export&quot; class=&quot;headerlink&quot; title=&quot;export&quot;&gt;&lt;/a&gt;export&lt;/h3&gt;&lt;p&gt;输出可以有两种方式：第三种是用来重命名&lt;/p&gt;
@@ -388,7 +452,7 @@
     <link href="http://www.yatessss.com/2016/07/08/%E4%BD%BF%E7%94%A8vue%E5%AE%8C%E6%88%90%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5web%E7%89%88.html"/>
     <id>http://www.yatessss.com/2016/07/08/使用vue完成知乎日报web版.html</id>
     <published>2016-07-07T16:00:00.000Z</published>
-    <updated>2016-07-14T08:43:24.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;在线地址&quot;&gt;&lt;a href=&quot;#在线地址&quot; class=&quot;headerlink&quot; title=&quot;在线地址&quot;&gt;&lt;/a&gt;在线地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zhihudaily-vue.yatessss.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;demo地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/yatessss/zhihudaily-vue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github地址&lt;/a&gt;&lt;/p&gt;
@@ -454,7 +518,7 @@
     <link href="http://www.yatessss.com/2016/06/08/%E4%BD%BF%E7%94%A8vue%E5%AE%8C%E6%88%90%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E9%A1%B5%E9%9D%A2.html"/>
     <id>http://www.yatessss.com/2016/06/08/使用vue完成上传文件页面.html</id>
     <published>2016-06-07T16:00:00.000Z</published>
-    <updated>2016-06-12T07:05:26.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;需求描述&quot;&gt;&lt;a href=&quot;#需求描述&quot; class=&quot;headerlink&quot; title=&quot;需求描述&quot;&gt;&lt;/a&gt;需求描述&lt;/h3&gt;&lt;p&gt;最近加班加点完成了一个上传文件的需求，听起来很简单想着也很简单，但是知易行难实际操作起来，还是遇到了很多问题，现在就来总结一下，使用vue来构建一个上传文件的页面中会遇到哪些问题，其中的一些问题也可能是用别的框架也会遇到的问题。&lt;/p&gt;
 &lt;p&gt;平台：主要是在安卓和苹果的微信webview中运行。&lt;/p&gt;
@@ -542,7 +606,7 @@
     <link href="http://www.yatessss.com/2016/05/17/webstorm%E9%A1%B9%E7%9B%AE%E4%B8%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B6%88%E5%A4%B1.md.html"/>
     <id>http://www.yatessss.com/2016/05/17/webstorm项目下文件夹消失.md.html</id>
     <published>2016-05-16T16:00:00.000Z</published>
-    <updated>2016-05-19T03:36:11.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;大概情况就是webstorm打开项目后，文件夹都会消失，并且文件夹都会变到左上方，不会像正常情况一样，呈现一个树状的目录结构。&lt;a href=&quot;http://stackoverflow.com/questions/9302346/folders-missing-in-project-pane-in-webstorm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;解决地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;具体办法就是：&lt;/p&gt;
@@ -572,7 +636,7 @@
     <link href="http://www.yatessss.com/2016/05/06/vue%E5%88%9D%E4%BD%93%E9%AA%8C.html"/>
     <id>http://www.yatessss.com/2016/05/06/vue初体验.html</id>
     <published>2016-05-05T16:00:00.000Z</published>
-    <updated>2016-05-10T10:55:49.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;最近QA提了一个问题，我原来做的&lt;a href=&quot;http://www.yatessss.com/2016/02/19/%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93.html&quot;&gt;到账记录的页面&lt;/a&gt;从列表页点进详情页之后返回列表页的时候不能返回到之前进去的位置。当时写这个页面的时候也遇到了一些问题，具体可以看这里&lt;a href=&quot;http://www.yatessss.com/2016/02/19/%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93.html&quot;&gt;到账记录的页面&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;因为当时做到账记录这个页面时是两个页面，列表页是通过接口的数据生成的，页面并不会缓存，进入详情页返回列表页时数据要重新请求，所以不能回到当时的位置。正好最近公司准备开始使用vue，所以我就用vue重构了这个页面，vue自带路由，因为是单页面所以列表页也可以保存起来。&lt;/p&gt;
@@ -618,7 +682,7 @@
     <link href="http://www.yatessss.com/2016/04/29/%E9%87%8D%E6%8E%92reflow%E4%B8%8E%E9%87%8D%E7%BB%98repaint.html"/>
     <id>http://www.yatessss.com/2016/04/29/重排reflow与重绘repaint.html</id>
     <published>2016-04-28T16:00:00.000Z</published>
-    <updated>2016-10-25T02:48:16.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;重绘与重排&quot;&gt;&lt;a href=&quot;#重绘与重排&quot; class=&quot;headerlink&quot; title=&quot;重绘与重排&quot;&gt;&lt;/a&gt;重绘与重排&lt;/h3&gt;&lt;p&gt;最近看了一本书《高性能JavaScript》，里面有很多有用的代码片段，后面我准备把一些摘抄记录下来。&lt;/p&gt;
 &lt;p&gt;今天主要想说说重绘与重排，这个也是《高性能JavaScript》中讲的一部分，我来总结一下吧。&lt;/p&gt;
@@ -693,7 +757,7 @@
     <link href="http://www.yatessss.com/2016/04/18/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"/>
     <id>http://www.yatessss.com/2016/04/18/《JavaScript高级程序设计》读书笔记.html</id>
     <published>2016-04-17T16:00:00.000Z</published>
-    <updated>2016-05-09T10:52:59.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;最近在复习《JavaScript高级程序设计》，然后记一些自己原来不懂的地方吧，不会整个总结，就是按知识点一个一个把新学到的列出来。&lt;/p&gt;
 &lt;ol&gt;
@@ -751,7 +815,7 @@
     <link href="http://www.yatessss.com/2016/04/15/WebStorage.html"/>
     <id>http://www.yatessss.com/2016/04/15/WebStorage.html</id>
     <published>2016-04-14T16:00:00.000Z</published>
-    <updated>2016-04-21T10:07:06.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;接着上周那个获取地理位置的功能继续说，上周JSSDK注册是成功了，但是又发现了另一个bug，如果一个未登陆过的用户从分享链接登录会报错误，state参数过长，登录失败。&lt;/p&gt;
 &lt;p&gt;这个bug出现的原因是在后台，因为后台代替前端去调微信授权的接口，取到code后再去种session到前端的这个页面，后台会携带一些参数在state这个字段中，但微信state字段最大支持128字节，超出这个最大限制后就会报错了。&lt;/p&gt;
@@ -805,7 +869,7 @@
     <link href="http://www.yatessss.com/2016/03/31/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94this.html"/>
     <id>http://www.yatessss.com/2016/03/31/你不知道的JavaScript读书笔记——this.html</id>
     <published>2016-03-30T16:00:00.000Z</published>
-    <updated>2016-04-01T02:24:12.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;对this的误解&quot;&gt;&lt;a href=&quot;#对this的误解&quot; class=&quot;headerlink&quot; title=&quot;对this的误解&quot;&gt;&lt;/a&gt;对this的误解&lt;/h3&gt;&lt;p&gt;学习&lt;code&gt;this&lt;/code&gt;之前，应该知道两句话。&lt;/p&gt;
 &lt;p&gt;首先要先消除对&lt;code&gt;this&lt;/code&gt;的误解，明白第一句话：&lt;strong&gt;&lt;em&gt;&lt;code&gt;this&lt;/code&gt;既不指向函数自身也不指向函数的词法作用域。&lt;/em&gt;&lt;/strong&gt;这句话很重要，现在看一下证明这句话的例子。&lt;/p&gt;
@@ -896,7 +960,7 @@
     <link href="http://www.yatessss.com/2016/03/30/%E5%BE%AE%E4%BF%A1JSSDK%E5%9D%91%E5%95%8A%E5%9D%91.html"/>
     <id>http://www.yatessss.com/2016/03/30/微信JSSDK坑啊坑.html</id>
     <published>2016-03-29T16:00:00.000Z</published>
-    <updated>2016-04-11T12:02:23.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;update：&quot;&gt;&lt;a href=&quot;#update：&quot; class=&quot;headerlink&quot; title=&quot;update：&quot;&gt;&lt;/a&gt;update：&lt;/h3&gt;&lt;p&gt;今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。&lt;/p&gt;
 &lt;p&gt;于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。&lt;/p&gt;
@@ -975,7 +1039,7 @@
     <link href="http://www.yatessss.com/2016/03/29/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E9%97%AD%E5%8C%85.html"/>
     <id>http://www.yatessss.com/2016/03/29/你不知道的JavaScript读书笔记——闭包.html</id>
     <published>2016-03-28T16:00:00.000Z</published>
-    <updated>2016-03-31T02:22:11.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;理解闭包&quot;&gt;&lt;a href=&quot;#理解闭包&quot; class=&quot;headerlink&quot; title=&quot;理解闭包&quot;&gt;&lt;/a&gt;理解闭包&lt;/h3&gt;&lt;p&gt;闭包是什么，怎么理解？&lt;/p&gt;
 &lt;p&gt;闭包就是一个作用域的外部变量保持着对这个作用域的引用，这个引用就叫做闭包。&lt;/p&gt;
@@ -1034,7 +1098,7 @@
     <link href="http://www.yatessss.com/2016/03/29/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E2%80%94%E5%A4%96%E7%BD%91%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%88%B0%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2.html"/>
     <id>http://www.yatessss.com/2016/03/29/内网穿透—外网可以访问到本地页面.html</id>
     <published>2016-03-28T16:00:00.000Z</published>
-    <updated>2016-03-29T12:14:42.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;今天在解决跨域问的时候，误打误撞解决了一个原来困扰我的问题。&lt;/p&gt;
 &lt;p&gt;很多时候会有这样的问题，想要把本地的页面发送给别人看，不可能一个demo页面都去部署到线上去，那该怎么办？&lt;/p&gt;
@@ -1077,7 +1141,7 @@
     <link href="http://www.yatessss.com/2016/03/28/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BD%9C%E7%94%A8%E5%9F%9F.html"/>
     <id>http://www.yatessss.com/2016/03/28/你不知道的JavaScript读书笔记——作用域.html</id>
     <published>2016-03-27T16:00:00.000Z</published>
-    <updated>2016-03-30T11:45:02.000Z</updated>
+    <updated>2017-01-03T03:29:55.000Z</updated>
     
     <content type="html">&lt;p&gt;这几天在看《你不知道的JavaScript》这本书，内容简单易懂而且觉得讲的很有意思，趁着还热乎，把刚看完的总结一下吧。这个是第一部分讲的是作用域。&lt;/p&gt;
 &lt;h3 id=&quot;1-初识作用域&quot;&gt;&lt;a href=&quot;#1-初识作用域&quot; class=&quot;headerlink&quot; title=&quot;1. 初识作用域&quot;&gt;&lt;/a&gt;1. 初识作用域&lt;/h3&gt;&lt;p&gt;作用域是一套规则，用于确定在何处以及如何查找变量。编译器有一个术语，比如我们查找变量a的值，引擎会进行LHS和RHS查询。LHS和RHS是什么呢？通俗的讲就是对赋值操作的左侧和右侧进行查询。&lt;/p&gt;
@@ -1167,138 +1231,6 @@
       <category term="JavaScript" scheme="http://www.yatessss.com/tags/JavaScript/"/>
     
       <category term="作用域" scheme="http://www.yatessss.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>百度ife项目之html</title>
-    <link href="http://www.yatessss.com/2016/03/23/%E7%99%BE%E5%BA%A6ife%E4%B9%8Bhtml.html"/>
-    <id>http://www.yatessss.com/2016/03/23/百度ife之html.html</id>
-    <published>2016-03-22T16:00:00.000Z</published>
-    <updated>2016-03-24T05:18:13.000Z</updated>
-    
-    <content type="html">&lt;p&gt;历时两天半的断断续续，我做完了本次百度ife的第七个任务（&lt;a href=&quot;http://ife.baidu.com/task/detail?taskId=7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），是一个html的布局任务，我做好的demo（&lt;a href=&quot;http://yatessss.github.io/demo/baidu_ife/task_7/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;）。&lt;/p&gt;
-&lt;p&gt;尽管已经有过很多html布局的经验了，但不得不说很多东西我还都不太熟悉，下面就来总结一下做完这个任务的一些收获吧。&lt;/p&gt;
-&lt;p&gt;我大概总结了这些收获吧：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;html5的新标签的应用，这个我专门总结了一下（&lt;a href=&quot;http://www.yatessss.com/html/2016/03/18/HTML5%E7%9A%84%E5%AD%A6%E4%B9%A0.html&quot;&gt;这里&lt;/a&gt;）&lt;/li&gt;
-&lt;li&gt;等宽多栏布局的实现&lt;/li&gt;
-&lt;li&gt;父元素与子元素的&lt;code&gt;margin-top&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;border-width&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;超过行数限制显示……&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;letter-spacing&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;伪类标签&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;等宽多栏布局&quot;&gt;&lt;a href=&quot;#等宽多栏布局&quot; class=&quot;headerlink&quot; title=&quot;等宽多栏布局&quot;&gt;&lt;/a&gt;等宽多栏布局&lt;/h4&gt;&lt;p&gt;其中有一个部分是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个是四栏布局，每个栏等宽且宽度应该随着屏幕宽度变化，要求有一个最小的宽度。&lt;/p&gt;
-&lt;p&gt;我大概想到了这么几种布局的方案：使用&lt;code&gt;inline-block&lt;/code&gt;布局、使用&lt;code&gt;flex&lt;/code&gt;布局、使用&lt;code&gt;float&lt;/code&gt;布局、使用框架的栅格布局。&lt;/p&gt;
-&lt;p&gt;首先来说一下我最后选用的布局方案，我采用的是&lt;code&gt;float&lt;/code&gt;布局，我给每一栏定了25%的宽，然后定了一个最小宽度&lt;code&gt;min-width&lt;/code&gt;，然后让他向左浮动。&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;text-align&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;float&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;left&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;inherit&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;width&lt;/span&gt;: 25%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;min-width&lt;/span&gt;: 320&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;为什么选择这种方案？&lt;/strong&gt;如果使用&lt;code&gt;inline-block&lt;/code&gt;布局两栏之间会有一个间隙，还得去处理这个间隙；使用&lt;code&gt;flex&lt;/code&gt;布局的话移动端是很好的，但是如果是pc端的话会有兼容方面的问题；栅格布局肯定是可以的，但是在这上使用一个框架的话显得有些大材小用了。所以浮动我认为是一个比较好的方法。&lt;/p&gt;
-&lt;p&gt;简单来说一下每一种布局方案：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用&lt;code&gt;inline-block&lt;/code&gt;布局，这种布局方案会有一个小问题，就是在每个栏之间会有间隙，这个问题的具体解决与描述我找到了一篇文章（&lt;a href=&quot;http://www.w3cplus.com/css/fighting-the-space-between-inline-block-elements&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;）。这里详细的说明了这个问题的解决办法，所以如果是本来每栏之间就有间距的话，用&lt;code&gt;inline-block&lt;/code&gt;布局是最好的了，他还可以配合&lt;code&gt;text-align&lt;/code&gt;把多栏居中，用起来真的不错。&lt;/li&gt;
-&lt;li&gt;使用&lt;code&gt;flex&lt;/code&gt;布局，使用&lt;code&gt;dispaly: flex&lt;/code&gt;，&lt;code&gt;flex : 1&lt;/code&gt; 这样就保证了每栏等宽了，不过他有浏览器的兼容问题这个必须要注意，在ie10以上的浏览器中。&lt;/li&gt;
-&lt;li&gt;栅格布局，他会把整个屏幕平均分成12列，根据自己的宽度来定义占用几列，这个大家得看具体的框架了，我就不详细描述了（因为我自己的实践也不是很多 - -）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;float&lt;/code&gt;布局，这个主要注意的就是如果你的父容器如果没有定高的话记得清除浮动。不然父容器会没有高。。。。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;父元素与子元素的margin-top&quot;&gt;&lt;a href=&quot;#父元素与子元素的margin-top&quot; class=&quot;headerlink&quot; title=&quot;父元素与子元素的margin-top&quot;&gt;&lt;/a&gt;父元素与子元素的&lt;code&gt;margin-top&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;这个就是如果你给父容器的第一个子元素设定了&lt;code&gt;margin-top&lt;/code&gt;的话，页面的效果不是子元素向下移动，而是父元素向下移动，而父元素和子元素的边距是没有变化的。这里我查找到的答案（&lt;a href=&quot;http://blog.csdn.net/duran1986/article/details/6930967&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），我简单描述一下，在盒子模型中规定：所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享之。毗邻的定义为：同级或者嵌套(父子之间)的盒元素，并且它们之间没有非空内容、Padding或Border分隔。所以父元素和子元素会共享这个边距。解决办法其实理解了上述的那篇文章自然就可以解决了。解决办法如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;修改父元素的高度，增加padding-top样式模拟（padding-top：1px；常用） &lt;/li&gt;
-&lt;li&gt;为父元素添加overflow：hidden；样式即可（完美） &lt;/li&gt;
-&lt;li&gt;为父元素或者子元素声明浮动（float：left；可用） &lt;/li&gt;
-&lt;li&gt;为父元素添加border（border:1px solid transparent可用） &lt;/li&gt;
-&lt;li&gt;为父元素或者子元素声明绝对定位&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;border-width&quot;&gt;&lt;a href=&quot;#border-width&quot; class=&quot;headerlink&quot; title=&quot;border-width&quot;&gt;&lt;/a&gt;&lt;code&gt;border-width&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;通常我们写&lt;code&gt;border&lt;/code&gt;时就会直接写成这样：&lt;code&gt;border: 1px solid #000;&lt;/code&gt;类似这样，那这个&lt;code&gt;border-width&lt;/code&gt;有什么用呢？这个可以定义四条边是不同宽度的，他的顺序和&lt;code&gt;margin&lt;/code&gt;之类的是一样的上右下左这个顺序。&lt;/p&gt;
-&lt;p&gt;还有这个用处，而且我这次写页面的时候就用到了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个向下小箭头这么实现呢？当然我们可以用图标字体也可以用图片，但是用css我们也可以实现，这可能算是一个hack的方法吧，但是我觉得挺有趣的，我也是review别人代码是学习的。具体css如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;display&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;block&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;width&lt;/span&gt;: 6&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;height&lt;/span&gt;: 6&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;selector-id&quot;&gt;#867e7a&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;border-width&lt;/span&gt;: 0 1&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 1&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;-webkit-transform&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;rotate&lt;/span&gt;(45&lt;span class=&quot;selector-tag&quot;&gt;deg&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;transform&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;rotate&lt;/span&gt;(45&lt;span class=&quot;selector-tag&quot;&gt;deg&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;哈哈，真的很聪明，这样用&lt;code&gt;border-width&lt;/code&gt;属性隐藏掉两边，再旋转一下就可以了！&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;超过行数限制显示……&quot;&gt;&lt;a href=&quot;#超过行数限制显示……&quot; class=&quot;headerlink&quot; title=&quot;超过行数限制显示……&quot;&gt;&lt;/a&gt;超过行数限制显示……&lt;/h4&gt;&lt;p&gt;这个也是学习的啦，&lt;a href=&quot;http://www.zhangxinxu.com/study/201510/webkit-line-clamp-text-overflow-ellipsis.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;张鑫旭的博客&lt;/a&gt;，下面贴出css：&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.box&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;400px&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: -webkit-box;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;-webkit-line-clamp&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;-webkit-box-orient&lt;/span&gt;: vertical;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;overflow&lt;/span&gt;: hidden;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;letter-spacing&quot;&gt;&lt;a href=&quot;#letter-spacing&quot; class=&quot;headerlink&quot; title=&quot;letter-spacing&quot;&gt;&lt;/a&gt;&lt;code&gt;letter-spacing&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;遇到这样的样式不知道大家是怎么解决的？&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;大家是不是在两个字之间加很多的空格（&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;）呢？还是怎么样？可以用一下这个css属性&lt;code&gt;letter-spacing&lt;/code&gt;他可以改变字之间的间距，但是他有一个问题就是他会在&lt;code&gt;搜索&lt;/code&gt;两个字的后面都加间距字不是居中的，所以配合&lt;code&gt;padding-left&lt;/code&gt;加一个和间距相同的左内边距，这样就可以保证字是居中的了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;伪类标签&quot;&gt;&lt;a href=&quot;#伪类标签&quot; class=&quot;headerlink&quot; title=&quot;伪类标签&quot;&gt;&lt;/a&gt;伪类标签&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_6.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;像图中对勾和横线这样的无意义的标签，我们最好是用before和after伪类来代替。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;历时两天半的断断续续，我做完了本次百度ife的第七个任务（&lt;a href=&quot;http://ife.baidu.com/task/detail?taskId=7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），是一个html的布局任务，我做好的
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://www.yatessss.com/categories/HTML/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5新标签的学习</title>
-    <link href="http://www.yatessss.com/2016/03/18/HTML5%E7%9A%84%E5%AD%A6%E4%B9%A0.html"/>
-    <id>http://www.yatessss.com/2016/03/18/HTML5的学习.html</id>
-    <published>2016-03-17T16:00:00.000Z</published>
-    <updated>2016-03-25T07:16:35.000Z</updated>
-    
-    <content type="html">&lt;p&gt;虽说已经知道html5很长时间了，但是我们平常写页面的时候是不是还是会这样呢？&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;header&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;main-body&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;footer&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;其实我们可以这么写：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;header&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;header&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;main&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;main&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;footer&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  //一些内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;footer&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;html5给了我们很多新的标签可供使用，以前对html5有些了解，但没有仔细的学习，正好最近在看百度ife的任务题(&lt;a href=&quot;http://ife.baidu.com/task/all&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里&lt;/a&gt;)，我们就来一起学一学我们以前知道但是没有注意的html5新标签吧~~~&lt;/p&gt;
-&lt;p&gt;就像我们上面那个例子看到的那样，我觉得这是里面最常用的的标签了。&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;，以前我们都会用&lt;code&gt;id&lt;/code&gt;或者&lt;code&gt;class&lt;/code&gt;去表明这个&lt;code&gt;div&lt;/code&gt;的意图，现在我们多了这几个标签之后，我们可以更加语义化的去编写html的结构了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;header和footer标签&quot;&gt;&lt;a href=&quot;#header和footer标签&quot; class=&quot;headerlink&quot; title=&quot;header和footer标签&quot;&gt;&lt;/a&gt;header和footer标签&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;标签就是定义页眉和页脚，语义很明显。用法和&lt;code&gt;div&lt;/code&gt;和没有本质的区别。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;main标签&quot;&gt;&lt;a href=&quot;#main标签&quot; class=&quot;headerlink&quot; title=&quot;main标签&quot;&gt;&lt;/a&gt;main标签&lt;/h4&gt;&lt;p&gt;接下来是&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;标签了，这个标签貌似不是h5新出来的标签，但是之前我都没有注意过，W3School给出他的定义和用法是这样的(w3c的在这里。。。。有能力的同学可以看这个&lt;a href=&quot;http://w3c.github.io/html/index.html#contents&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地址&lt;/a&gt;)。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; 标签规定文档的主要内容。&lt;br&gt;&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; 元素中的内容对于文档来说应当是唯一的。它不应包含在文档中重复出现的内容，比如侧栏、导航栏、版权信息、站点标志或搜索表单。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在一个文档中，不能出现一个以上的 &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; 元素。&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; 元素不能是以下元素的后代：&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;根据这个说明，我们可以知道&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;标签很适合做主要内容的标签，而不用再用&lt;code&gt;div&lt;/code&gt;来定义一个&lt;code&gt;class=&amp;quot;main-body&amp;quot;&lt;/code&gt;类似这样的结构来编写主要内容部分了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;nav标签&quot;&gt;&lt;a href=&quot;#nav标签&quot; class=&quot;headerlink&quot; title=&quot;nav标签&quot;&gt;&lt;/a&gt;nav标签&lt;/h4&gt;&lt;p&gt;以前在写头部的导航标签的时候我们一般是这样：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/html/index.asp&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/html/index.asp&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/html/index.asp&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;但是html5新加了一个专门用于导航的标签&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;，他主要是应用在需要导航链接的地方和页脚需要加很多链接列表的地方，所以以后我们在写导航栏的时候就可以这样：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/events&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Current Events&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      ...more...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;section和article标签&quot;&gt;&lt;a href=&quot;#section和article标签&quot; class=&quot;headerlink&quot; title=&quot;section和article标签&quot;&gt;&lt;/a&gt;section和article标签&lt;/h4&gt;&lt;p&gt;我在review别的同学的代码的时候看到了有些同学用&lt;code&gt;section&lt;/code&gt;标签来代替&lt;code&gt;div&lt;/code&gt;标签来做容器标签，其实这样是不对的。&lt;/p&gt;
-&lt;p&gt;官方的文档里是这么说的&lt;a href=&quot;http://w3c.github.io/html/sections.html#the-section-element&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The section element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the div element instead. A general rule is that the section element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我英语不好。。。用百度翻译了一下。。。。大概的意思就是这个&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;标签并不是一个通用的容器标签，如果只是为了布局需要用到容器元素的话还是推荐&lt;code&gt;div&lt;/code&gt;，&lt;code&gt;section&lt;/code&gt;标签是在文章中单独内容区块所用的(就好像我们小学时候的内容段，额。。。就是整篇文章分为几个大段。。。)。&lt;/p&gt;
-&lt;p&gt;而且&lt;code&gt;section&lt;/code&gt;标签内应该包含&lt;code&gt;&amp;lt;h&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签，他应该和&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;标签一起用，&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;表示一整篇文章，而&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;来区分里面的内容段。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;figure和figcaption标签&quot;&gt;&lt;a href=&quot;#figure和figcaption标签&quot; class=&quot;headerlink&quot; title=&quot;figure和figcaption标签&quot;&gt;&lt;/a&gt;figure和figcaption标签&lt;/h4&gt;&lt;p&gt;用途：&lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; 标签规定独立的流内容（图像、图表、照片、代码等等）。以前我们在写一个&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签的时候如果需要给这个img标签定位的话我们会在外面包裹一个&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;或者是设置&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签的display，现在就有一个专门的标签来包裹他了。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt;的用法如下：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;figcaption&gt; 标签定义 figure 元素的标题（caption）。&lt;br&gt;“figcaption” 元素应该被置于 “figure” 元素的第一个或最后一个子元素的位置。&lt;/figcaption&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;剩下的还有很多新标签，我就不在这里叙述了，有兴趣的可以到相关网站上看一下，我觉得以后在相关可以语义化的时候，我们可以尝试用一下新的标签~ &lt;/p&gt;
-&lt;p&gt;以上。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;虽说已经知道html5很长时间了，但是我们平常写页面的时候是不是还是会这样呢？&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://www.yatessss.com/categories/HTML/"/>
-    
     
   </entry>
   
