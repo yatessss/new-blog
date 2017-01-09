@@ -283,6 +283,139 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/31/你不知道的JavaScript读书笔记——this.html" itemprop="url">
+                  《你不知道的JavaScript》读书笔记——this
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-31T00:00:00+08:00" content="2016-03-31">
+              2016-03-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/31/你不知道的JavaScript读书笔记——this.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/31/你不知道的JavaScript读书笔记——this.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/31/你不知道的JavaScript读书笔记——this.html" class="leancloud_visitors" data-flag-title="《你不知道的JavaScript》读书笔记——this">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          对this的误解学习this之前，应该知道两句话。
+首先要先消除对this的误解，明白第一句话：this既不指向函数自身也不指向函数的词法作用域。这句话很重要，现在看一下证明这句话的例子。
+既不指向函数自身
+看下面的代码：
+123456789101112131415161718function foo(num) &#123;    console.log( "foo: " + num );    // 记录foo被调用的次数    this.count++;&#125;foo.count = 0;var i; for (i=0; i&lt;10; i++)&#123;    if( i &gt
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/31/你不知道的JavaScript读书笔记——this.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/30/微信JSSDK坑啊坑.html" itemprop="url">
                   微信JSSDK坑啊坑
                 </a>
@@ -795,151 +928,6 @@ var a在其作用域中声明新的变量，这个会在执行var a=2之前进�
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/23/百度ife之html.html" itemprop="url">
-                  百度ife项目之html
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-23T00:00:00+08:00" content="2016-03-23">
-              2016-03-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/23/百度ife之html.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/23/百度ife之html.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/23/百度ife之html.html" class="leancloud_visitors" data-flag-title="百度ife项目之html">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          历时两天半的断断续续，我做完了本次百度ife的第七个任务（这里），是一个html的布局任务，我做好的demo（这里）。
-尽管已经有过很多html布局的经验了，但不得不说很多东西我还都不太熟悉，下面就来总结一下做完这个任务的一些收获吧。
-我大概总结了这些收获吧：
-
-html5的新标签的应用，这个我专门总结了一下（这里）
-等宽多栏布局的实现
-父元素与子元素的margin-top
-border-width
-超过行数限制显示……
-letter-spacing
-伪类标签
-
-
-等宽多栏布局其中有一个部分是这样的：
-
-这个是四栏布局，每个栏等宽且宽度应该随着屏幕宽度变化，要求有一个最小的宽度。
-我大概想到了
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/23/百度ife之html.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -985,7 +973,7 @@ letter-spacing
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -993,7 +981,7 @@ letter-spacing
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1002,7 +990,7 @@ letter-spacing
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

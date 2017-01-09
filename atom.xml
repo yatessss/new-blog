@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yatessss.com/"/>
-  <updated>2017-01-03T08:19:40.000Z</updated>
+  <updated>2017-01-08T13:42:41.000Z</updated>
   <id>http://www.yatessss.com/</id>
   
   <author>
@@ -16,11 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一个自动翻谱的页面</title>
+    <link href="http://www.yatessss.com/2017/01/06/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%8A%A8%E7%BF%BB%E8%B0%B1%E7%9A%84%E9%A1%B5%E9%9D%A2.html"/>
+    <id>http://www.yatessss.com/2017/01/06/一个自动翻谱的页面.html</id>
+    <published>2017-01-05T16:00:00.000Z</published>
+    <updated>2017-01-08T13:42:41.000Z</updated>
+    
+    <content type="html">&lt;p&gt;起因：其实从很早之前就有过这方面的问题，就是在平时弹琴的时候，谱子很很多张图片，然后弹完这一页之后就必须得去翻谱子，这样总是得停下来很烦人，但是自己一直也很懒。。。。就一直用手翻没有去解放生产力，最近买了新电脑终于可以愉快地在家开发了~ 所以利用周末就做了一个可以设置好时间点自己翻谱子的页面~ 目前的版本功能还不完善，就是可以设置响应时间点来翻谱子，没有什么其他功能，因为是自己用可以满足自己的需求就可以了，如果以后还会有人用到的话，可能会考虑再添加一些功能吧~&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://guitar.yatessss.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这个是地址咯~&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个页面因为第一开始就是从简单出发的，没有考虑用到框架，所以就是用了最简单的jQuery来完成的。（因为好长时间不用jQuery，当我去写jQuery的时候，我发现自己已经忘了不少了，还得不时的去翻文档真要命 😂😂😂 ）&lt;/p&gt;
+&lt;p&gt;首先是选取文件，整个逻辑基本就是照搬MDN的文档上面的例子&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Using_files_from_web_applications&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在web应用中使用文件&lt;/a&gt;，这个选取文件部分的逻辑基本没有变，就是在整个逻辑部分做了一些处理，而且还存在一些小bug，但是整个流程上面没有什么问题了。&lt;/p&gt;
+&lt;p&gt;就说制作当中遇到的几个技术盲点吧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;setTimeout的问题，我在计时处理的时候用的是setTimeout，然后递归的去调用自己。然后发现自己调用的时候，只执行了一次就停止了，那肯定是我写的方法不对，然后就一番搜索。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/3755709/problem-with-settimeout-function-is-not-define&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;problem with setTimeout “function is not define” !&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基本有两种方法可以使用：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;changePosition&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      index++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(index)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      timer = setTimeout(changePosition, &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;changePosition&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      index++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(index)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      timer = setTimeout(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;changePosition()&amp;#125;, &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;更改input中placehodler的颜色，这个问题其实以前就遇到过，然后解决了时间久了就又忘了，还是贴出来一下吧：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000000397925&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用CSS修改HTML5 input placeholder颜色&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::-webkit-input-placeholder&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::-webkit-input-placeholder&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;:    &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:-moz-placeholder&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:-moz-placeholder&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;:    &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::-moz-placeholder&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::-moz-placeholder&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;:    &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:-ms-input-placeholder&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:-ms-input-placeholder&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;:    &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;起因：其实从很早之前就有过这方面的问题，就是在平时弹琴的时候，谱子很很多张图片，然后弹完这一页之后就必须得去翻谱子，这样总是得停下来很烦人，但是自己一直也很懒。。。。就一直用手翻没有去解放生产力，最近买了新电脑终于可以愉快地在家开发了~ 所以利用周末就做了一个可以设置好时间
+    
+    </summary>
+    
+      <category term="自娱自乐" scheme="http://www.yatessss.com/categories/%E8%87%AA%E5%A8%B1%E8%87%AA%E4%B9%90/"/>
+    
+    
+      <category term="JavaScript" scheme="http://www.yatessss.com/tags/JavaScript/"/>
+    
+      <category term="HTML" scheme="http://www.yatessss.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>写在2016年末</title>
     <link href="http://www.yatessss.com/2017/01/01/%E5%86%99%E5%9C%A82016%E5%B9%B4%E6%9C%AB.html"/>
     <id>http://www.yatessss.com/2017/01/01/写在2016年末.html</id>
     <published>2016-12-31T16:00:00.000Z</published>
-    <updated>2017-01-03T08:19:40.000Z</updated>
+    <updated>2017-01-09T11:32:25.000Z</updated>
     
     <content type="html">&lt;p&gt;回想起2016年是不是什么都记不起来了 对啊一年又匆忙的过去了 这一年和往年并没有任何不一样 还是一样谨慎 一样平凡 不管是在哪方面 都是那么普通 我一直都和别人说 我的一生就是谨慎的一生  人生一直都在既定的轨道上前行 没有任何出格的事情  学习 工作 生活  &lt;/p&gt;
 &lt;p&gt;昨天和朋友讨论 到底什么算是出格的事情呢？  当时想了很久 也没有想到一个满意的答案  今天在想起来 到底什么才算是出格的事情呢  我想就是你为了不想在既定的轨道上前行 所做的努力 这算不算应该叫做出格的事情   我想了很久 觉得这个答案在我心里是认可的  &lt;/p&gt;
@@ -43,6 +86,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;矫情死了 &lt;/p&gt;
 &lt;p&gt;回去就准备剪断那个三千烦恼丝吧  在新的一年里 能从头开始  为了能做一个有趣的 自在如风的人去努力吧  &lt;/p&gt;
+&lt;p&gt;新的一年在本职工作上面不会放松，自己的爱好坚持下去，还准备去运营一个公众号，写一个属于自己的小程序，学习一下设计方面的东西。可能想要的太多，一点一点来吧。&lt;/p&gt;
 &lt;p&gt;在这人世间 有些路是非要单独一个去面对 单独一个人去跋涉的 路再长再远 夜再黑再暗  也得独自默默地走下去 ———— 席慕蓉&lt;/p&gt;
 &lt;p&gt;就这样吧 让我默默carry一会 &lt;/p&gt;
 &lt;p&gt;再加一句吧   电影里说，“你我之间本无缘分，全靠我死撑，我明白的。”以前觉得这话直抵泪点，现在却觉得，说白了，爱一个人真的就是自己一个人的事儿，得拿出过日子一样的态度。只要还想继续，就大不了哭一场，硬着头皮爱下去。世间什么缘分不缘分，都是撑来的。——七堇年&lt;/p&gt;
@@ -1214,80 +1258,6 @@
       <category term="JavaScript" scheme="http://www.yatessss.com/tags/JavaScript/"/>
     
       <category term="作用域" scheme="http://www.yatessss.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>百度ife项目之html</title>
-    <link href="http://www.yatessss.com/2016/03/23/%E7%99%BE%E5%BA%A6ife%E4%B9%8Bhtml.html"/>
-    <id>http://www.yatessss.com/2016/03/23/百度ife之html.html</id>
-    <published>2016-03-22T16:00:00.000Z</published>
-    <updated>2017-01-03T03:29:55.000Z</updated>
-    
-    <content type="html">&lt;p&gt;历时两天半的断断续续，我做完了本次百度ife的第七个任务（&lt;a href=&quot;http://ife.baidu.com/task/detail?taskId=7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），是一个html的布局任务，我做好的demo（&lt;a href=&quot;http://yatessss.github.io/demo/baidu_ife/task_7/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;）。&lt;/p&gt;
-&lt;p&gt;尽管已经有过很多html布局的经验了，但不得不说很多东西我还都不太熟悉，下面就来总结一下做完这个任务的一些收获吧。&lt;/p&gt;
-&lt;p&gt;我大概总结了这些收获吧：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;html5的新标签的应用，这个我专门总结了一下（&lt;a href=&quot;http://www.yatessss.com/html/2016/03/18/HTML5%E7%9A%84%E5%AD%A6%E4%B9%A0.html&quot;&gt;这里&lt;/a&gt;）&lt;/li&gt;
-&lt;li&gt;等宽多栏布局的实现&lt;/li&gt;
-&lt;li&gt;父元素与子元素的&lt;code&gt;margin-top&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;border-width&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;超过行数限制显示……&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;letter-spacing&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;伪类标签&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;等宽多栏布局&quot;&gt;&lt;a href=&quot;#等宽多栏布局&quot; class=&quot;headerlink&quot; title=&quot;等宽多栏布局&quot;&gt;&lt;/a&gt;等宽多栏布局&lt;/h4&gt;&lt;p&gt;其中有一个部分是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个是四栏布局，每个栏等宽且宽度应该随着屏幕宽度变化，要求有一个最小的宽度。&lt;/p&gt;
-&lt;p&gt;我大概想到了这么几种布局的方案：使用&lt;code&gt;inline-block&lt;/code&gt;布局、使用&lt;code&gt;flex&lt;/code&gt;布局、使用&lt;code&gt;float&lt;/code&gt;布局、使用框架的栅格布局。&lt;/p&gt;
-&lt;p&gt;首先来说一下我最后选用的布局方案，我采用的是&lt;code&gt;float&lt;/code&gt;布局，我给每一栏定了25%的宽，然后定了一个最小宽度&lt;code&gt;min-width&lt;/code&gt;，然后让他向左浮动。&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;text-align&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;float&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;left&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;inherit&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;width&lt;/span&gt;: 25%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;min-width&lt;/span&gt;: 320&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;为什么选择这种方案？&lt;/strong&gt;如果使用&lt;code&gt;inline-block&lt;/code&gt;布局两栏之间会有一个间隙，还得去处理这个间隙；使用&lt;code&gt;flex&lt;/code&gt;布局的话移动端是很好的，但是如果是pc端的话会有兼容方面的问题；栅格布局肯定是可以的，但是在这上使用一个框架的话显得有些大材小用了。所以浮动我认为是一个比较好的方法。&lt;/p&gt;
-&lt;p&gt;简单来说一下每一种布局方案：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用&lt;code&gt;inline-block&lt;/code&gt;布局，这种布局方案会有一个小问题，就是在每个栏之间会有间隙，这个问题的具体解决与描述我找到了一篇文章（&lt;a href=&quot;http://www.w3cplus.com/css/fighting-the-space-between-inline-block-elements&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;）。这里详细的说明了这个问题的解决办法，所以如果是本来每栏之间就有间距的话，用&lt;code&gt;inline-block&lt;/code&gt;布局是最好的了，他还可以配合&lt;code&gt;text-align&lt;/code&gt;把多栏居中，用起来真的不错。&lt;/li&gt;
-&lt;li&gt;使用&lt;code&gt;flex&lt;/code&gt;布局，使用&lt;code&gt;dispaly: flex&lt;/code&gt;，&lt;code&gt;flex : 1&lt;/code&gt; 这样就保证了每栏等宽了，不过他有浏览器的兼容问题这个必须要注意，在ie10以上的浏览器中。&lt;/li&gt;
-&lt;li&gt;栅格布局，他会把整个屏幕平均分成12列，根据自己的宽度来定义占用几列，这个大家得看具体的框架了，我就不详细描述了（因为我自己的实践也不是很多 - -）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;float&lt;/code&gt;布局，这个主要注意的就是如果你的父容器如果没有定高的话记得清除浮动。不然父容器会没有高。。。。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;父元素与子元素的margin-top&quot;&gt;&lt;a href=&quot;#父元素与子元素的margin-top&quot; class=&quot;headerlink&quot; title=&quot;父元素与子元素的margin-top&quot;&gt;&lt;/a&gt;父元素与子元素的&lt;code&gt;margin-top&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;这个就是如果你给父容器的第一个子元素设定了&lt;code&gt;margin-top&lt;/code&gt;的话，页面的效果不是子元素向下移动，而是父元素向下移动，而父元素和子元素的边距是没有变化的。这里我查找到的答案（&lt;a href=&quot;http://blog.csdn.net/duran1986/article/details/6930967&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），我简单描述一下，在盒子模型中规定：所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享之。毗邻的定义为：同级或者嵌套(父子之间)的盒元素，并且它们之间没有非空内容、Padding或Border分隔。所以父元素和子元素会共享这个边距。解决办法其实理解了上述的那篇文章自然就可以解决了。解决办法如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;修改父元素的高度，增加padding-top样式模拟（padding-top：1px；常用） &lt;/li&gt;
-&lt;li&gt;为父元素添加overflow：hidden；样式即可（完美） &lt;/li&gt;
-&lt;li&gt;为父元素或者子元素声明浮动（float：left；可用） &lt;/li&gt;
-&lt;li&gt;为父元素添加border（border:1px solid transparent可用） &lt;/li&gt;
-&lt;li&gt;为父元素或者子元素声明绝对定位&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;border-width&quot;&gt;&lt;a href=&quot;#border-width&quot; class=&quot;headerlink&quot; title=&quot;border-width&quot;&gt;&lt;/a&gt;&lt;code&gt;border-width&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;通常我们写&lt;code&gt;border&lt;/code&gt;时就会直接写成这样：&lt;code&gt;border: 1px solid #000;&lt;/code&gt;类似这样，那这个&lt;code&gt;border-width&lt;/code&gt;有什么用呢？这个可以定义四条边是不同宽度的，他的顺序和&lt;code&gt;margin&lt;/code&gt;之类的是一样的上右下左这个顺序。&lt;/p&gt;
-&lt;p&gt;还有这个用处，而且我这次写页面的时候就用到了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个向下小箭头这么实现呢？当然我们可以用图标字体也可以用图片，但是用css我们也可以实现，这可能算是一个hack的方法吧，但是我觉得挺有趣的，我也是review别人代码是学习的。具体css如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;display&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;block&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;width&lt;/span&gt;: 6&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;height&lt;/span&gt;: 6&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;selector-id&quot;&gt;#867e7a&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;border-width&lt;/span&gt;: 0 1&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 1&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;-webkit-transform&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;rotate&lt;/span&gt;(45&lt;span class=&quot;selector-tag&quot;&gt;deg&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;transform&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;rotate&lt;/span&gt;(45&lt;span class=&quot;selector-tag&quot;&gt;deg&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;哈哈，真的很聪明，这样用&lt;code&gt;border-width&lt;/code&gt;属性隐藏掉两边，再旋转一下就可以了！&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;超过行数限制显示……&quot;&gt;&lt;a href=&quot;#超过行数限制显示……&quot; class=&quot;headerlink&quot; title=&quot;超过行数限制显示……&quot;&gt;&lt;/a&gt;超过行数限制显示……&lt;/h4&gt;&lt;p&gt;这个也是学习的啦，&lt;a href=&quot;http://www.zhangxinxu.com/study/201510/webkit-line-clamp-text-overflow-ellipsis.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;张鑫旭的博客&lt;/a&gt;，下面贴出css：&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.box&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;400px&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: -webkit-box;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;-webkit-line-clamp&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;-webkit-box-orient&lt;/span&gt;: vertical;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;overflow&lt;/span&gt;: hidden;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;letter-spacing&quot;&gt;&lt;a href=&quot;#letter-spacing&quot; class=&quot;headerlink&quot; title=&quot;letter-spacing&quot;&gt;&lt;/a&gt;&lt;code&gt;letter-spacing&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;遇到这样的样式不知道大家是怎么解决的？&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;大家是不是在两个字之间加很多的空格（&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;）呢？还是怎么样？可以用一下这个css属性&lt;code&gt;letter-spacing&lt;/code&gt;他可以改变字之间的间距，但是他有一个问题就是他会在&lt;code&gt;搜索&lt;/code&gt;两个字的后面都加间距字不是居中的，所以配合&lt;code&gt;padding-left&lt;/code&gt;加一个和间距相同的左内边距，这样就可以保证字是居中的了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&quot;伪类标签&quot;&gt;&lt;a href=&quot;#伪类标签&quot; class=&quot;headerlink&quot; title=&quot;伪类标签&quot;&gt;&lt;/a&gt;伪类标签&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xqch8.com1.z0.glb.clouddn.com/blog_2016_03_pic_6.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;像图中对勾和横线这样的无意义的标签，我们最好是用before和after伪类来代替。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;历时两天半的断断续续，我做完了本次百度ife的第七个任务（&lt;a href=&quot;http://ife.baidu.com/task/detail?taskId=7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;），是一个html的布局任务，我做好的
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://www.yatessss.com/categories/HTML/"/>
-    
     
   </entry>
   

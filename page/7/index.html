@@ -283,8 +283,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/25/ES6study-2.html" itemprop="url">
-                  ES6学习笔记(变量的解构赋值)
+                <a class="post-title-link" href="/2016/01/26/Charles解决跨域问题.html" itemprop="url">
+                  通过Charles解决手机调试本地页面时的跨域问题
                 </a>
               
             
@@ -297,8 +297,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-25T00:00:00+08:00" content="2016-01-25">
-              2016-01-25
+            <time itemprop="dateCreated" datetime="2016-01-26T00:00:00+08:00" content="2016-01-26">
+              2016-01-26
             </time>
           </span>
 
@@ -311,8 +311,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/ES6/" itemprop="url" rel="index">
-                    <span itemprop="name">ES6</span>
+                  <a href="/categories/Charles/" itemprop="url" rel="index">
+                    <span itemprop="name">Charles</span>
                   </a>
                 </span>
 
@@ -327,8 +327,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/25/ES6study-2.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/ES6study-2.html" itemprop="commentsCount"></span>
+                <a href="/2016/01/26/Charles解决跨域问题.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/26/Charles解决跨域问题.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,7 +338,7 @@
 
           
           
-             <span id="/2016/01/25/ES6study-2.html" class="leancloud_visitors" data-flag-title="ES6学习笔记(变量的解构赋值)">
+             <span id="/2016/01/26/Charles解决跨域问题.html" class="leancloud_visitors" data-flag-title="通过Charles解决手机调试本地页面时的跨域问题">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -361,17 +361,14 @@
       
         
           
-          解构赋值这块，主要讲了数组，对象，字符串，数值和布尔值，函数参数这五类的解构赋值。
-1. 结构赋值的用途首先，我们先不看具体的用法，来看看结构赋值会运用到哪些地方，先有一个大概的印象。
-交换变量的值12[x, y] = [y, x];
-如上代码，这样写交换变量，简洁易懂，语义清晰。
+          今天在调试本地页面的时候遇到了一个问题，在本地调试页面，如果访问服务器的接口就会遇到跨域的问题。当在pc端调试本地页面的时候，使用浏览器插件allow-control-allow-origin就可以解决跨域的问题。但是如果是用手机端来调试页面的话，手机端没有解决跨域的插件，那应该怎么解决这个问题呢？经过同事的指导，我基本解决了手机跨域的问题，总结出来以便未来使用。
+解决手机跨域的问题，是通过Charles这个软件，通过把手机的访问请求通过本地pc来代理，来解决跨域的问题。大概思路是这个样子，下面我来把过程简单总结一下。
 
-从函数返回多个值原来函数只能返回一个值，如果需要返回多个值需要把他们放到一个数组或者是对象里返回。有了解构赋值之后，一切就方便多了。
-1234567891011121314151617// 返回一个数组function example() &#123;  return [1, 2, 3];&#125;var [a
+首先，我们应该设置一下手机的代理，一般都是在wifi链接的位置进行代理的
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/25/ES6study-2.html#more" rel="contents">
+            <a class="btn" href="/2016/01/26/Charles解决跨域问题.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -504,6 +501,141 @@ airbnb程序编写规范——这里
 
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/01/25/好的博客及文章.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/25/ES6study-2.html" itemprop="url">
+                  ES6学习笔记(变量的解构赋值)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-25T00:00:00+08:00" content="2016-01-25">
+              2016-01-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/ES6/" itemprop="url" rel="index">
+                    <span itemprop="name">ES6</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/25/ES6study-2.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/ES6study-2.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/01/25/ES6study-2.html" class="leancloud_visitors" data-flag-title="ES6学习笔记(变量的解构赋值)">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          解构赋值这块，主要讲了数组，对象，字符串，数值和布尔值，函数参数这五类的解构赋值。
+1. 结构赋值的用途首先，我们先不看具体的用法，来看看结构赋值会运用到哪些地方，先有一个大概的印象。
+交换变量的值12[x, y] = [y, x];
+如上代码，这样写交换变量，简洁易懂，语义清晰。
+
+从函数返回多个值原来函数只能返回一个值，如果需要返回多个值需要把他们放到一个数组或者是对象里返回。有了解构赋值之后，一切就方便多了。
+1234567891011121314151617// 返回一个数组function example() &#123;  return [1, 2, 3];&#125;var [a
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/25/ES6study-2.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -793,151 +925,6 @@ airbnb程序编写规范——这里
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/08/markdown.html" itemprop="url">
-                  markdown语法简介
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-08T20:46:12+08:00" content="2016-01-08">
-              2016-01-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">markdown</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/08/markdown.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/08/markdown.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/01/08/markdown.html" class="leancloud_visitors" data-flag-title="markdown语法简介">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          在我看来markdown语法就是可以不需要了解html,来编写博客网页.总结这个也是为了将来自己有不会的地方可以很快的查看一下.
-1. 标题标签写法
-markdown中的写法:
-
-1234567一级标题=======二级标题-----------### 其他级别标题
-
-对应的html结构:
-
-12345&lt;h1&gt;一级标题&lt;/h1&gt;&lt;h2&gt;二级标题&lt;/h2&gt;&lt;h3&gt;其他级别标题&lt;/h3&gt;
-2. 段落标签写法
-markdown中的写法:
-
-1这是一个段落,段落分隔用一个空白行
-
-对应的html结构:
-
-1&lt;p&gt;这是一
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/08/markdown.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -983,7 +970,7 @@ markdown中的写法:
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -991,7 +978,7 @@ markdown中的写法:
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1000,7 +987,7 @@ markdown中的写法:
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
