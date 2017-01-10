@@ -71,7 +71,7 @@
 <meta property="og:url" content="http://www.yatessss.com/2017/01/06/一个自动翻谱的页面.html">
 <meta property="og:site_name" content="yatessss">
 <meta property="og:description" content="起因：其实从很早之前就有过这方面的问题，就是在平时弹琴的时候，谱子很很多张图片，然后弹完这一页之后就必须得去翻谱子，这样总是得停下来很烦人，但是自己一直也很懒。。。。就一直用手翻没有去解放生产力，最近买了新电脑终于可以愉快地在家开发了~ 所以利用周末就做了一个可以设置好时间点自己翻谱子的页面~ 目前的版本功能还不完善，就是可以设置响应时间点来翻谱子，没有什么其他功能，因为是自己用可以满足自己的需求">
-<meta property="og:updated_time" content="2017-01-08T13:42:41.000Z">
+<meta property="og:updated_time" content="2017-01-10T16:43:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个自动翻谱的页面">
 <meta name="twitter:description" content="起因：其实从很早之前就有过这方面的问题，就是在平时弹琴的时候，谱子很很多张图片，然后弹完这一页之后就必须得去翻谱子，这样总是得停下来很烦人，但是自己一直也很懒。。。。就一直用手翻没有去解放生产力，最近买了新电脑终于可以愉快地在家开发了~ 所以利用周末就做了一个可以设置好时间点自己翻谱子的页面~ 目前的版本功能还不完善，就是可以设置响应时间点来翻谱子，没有什么其他功能，因为是自己用可以满足自己的需求">
@@ -360,20 +360,30 @@
 <p>这个页面因为第一开始就是从简单出发的，没有考虑用到框架，所以就是用了最简单的jQuery来完成的。（因为好长时间不用jQuery，当我去写jQuery的时候，我发现自己已经忘了不少了，还得不时的去翻文档真要命 😂😂😂 ）</p>
 <p>首先是选取文件，整个逻辑基本就是照搬MDN的文档上面的例子<a href="https://developer.mozilla.org/zh-CN/docs/Using_files_from_web_applications" target="_blank" rel="external">在web应用中使用文件</a>，这个选取文件部分的逻辑基本没有变，就是在整个逻辑部分做了一些处理，而且还存在一些小bug，但是整个流程上面没有什么问题了。</p>
 <p>就说制作当中遇到的几个技术盲点吧。</p>
-<ol>
-<li>setTimeout的问题，我在计时处理的时候用的是setTimeout，然后递归的去调用自己。然后发现自己调用的时候，只执行了一次就停止了，那肯定是我写的方法不对，然后就一番搜索。</li>
-</ol>
+<p>一、setTimeout的问题，我在计时处理的时候用的是setTimeout，然后递归的去调用自己。然后发现自己调用的时候，只执行了一次就停止了，那肯定是我写的方法不对，然后就一番搜索。</p>
 <p><a href="http://stackoverflow.com/questions/3755709/problem-with-settimeout-function-is-not-define" target="_blank" rel="external">problem with setTimeout “function is not define” !</a></p>
 <p>基本有两种方法可以使用：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">changePosition</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      index++</span><br><span class="line">      <span class="built_in">console</span>.log(index)</span><br><span class="line">      timer = setTimeout(changePosition, <span class="number">1000</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">changePosition</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      index++</span><br><span class="line">      <span class="built_in">console</span>.log(index)</span><br><span class="line">      timer = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;changePosition()&#125;, <span class="number">1000</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>更改input中placehodler的颜色，这个问题其实以前就遇到过，然后解决了时间久了就又忘了，还是贴出来一下吧：</li>
-</ol>
+<p>二、更改input中placehodler的颜色，这个问题其实以前就遇到过，然后解决了时间久了就又忘了，还是贴出来一下吧：</p>
 <p><a href="https://segmentfault.com/q/1010000000397925" target="_blank" rel="external">使用CSS修改HTML5 input placeholder颜色</a></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-input-placeholder</span>, <span class="selector-tag">textarea</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>:    <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-moz-placeholder</span>, <span class="selector-tag">textarea</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>:    <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-moz-placeholder</span>, <span class="selector-tag">textarea</span><span class="selector-pseudo">::-moz-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>:    <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-ms-input-placeholder</span>, <span class="selector-tag">textarea</span><span class="selector-pseudo">:-ms-input-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>:    <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li></li>
-</ol>
+<p>三、第三个是和jquery相关的，我对jquery的了解不够多，其实这个问题应该很普遍，就是事件解绑上面，在原生上面是addEventListener和removeEventListener，在jquery中只需要用到<code>.off()</code>和<code>.on()</code>就可以了。</p>
+<p>剩下基本没有问题了，后来又从setTimeout看到了JavaScript的运行机制，我先放一小段代码在这里：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> start = <span class="keyword">new</span> <span class="built_in">Date</span>();  </span><br><span class="line"><span class="keyword">var</span> end = <span class="number">0</span>;  </span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>() - start);  </span><br><span class="line">&#125;,  <span class="number">500</span>);  </span><br><span class="line"><span class="keyword">while</span> (<span class="keyword">new</span> <span class="built_in">Date</span>() - start &lt;= <span class="number">1000</span>) &#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>你认为这个运行的结果是什么呢？</p>
+<p>·</p>
+<p>·</p>
+<p>·</p>
+<p>·</p>
+<p>·</p>
+<p>·</p>
+<p>答案是1000+（1000以上的数字）</p>
+<p>如果你的答案是错的，那你也应该了解一下JavaScript运行的机制了。</p>
+<p>有这么两篇文章应该可以帮你理清思路：</p>
+<p><a href="http://ghmagical.com/article/page/id/H61NOVU0RZ9Y" target="_blank" rel="external">你应该知道的setTimeout秘密</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="external">JavaScript 运行机制详解：再谈Event Loop</a></p>
+<p>还有一个视频：</p>
+<p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank" rel="external">What the heck is the event loop anyway?</a></p>
 
       
     </div>
@@ -406,6 +416,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/10/我想到的.html" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -496,7 +510,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">38</span>
+              <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
