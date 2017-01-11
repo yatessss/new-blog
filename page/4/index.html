@@ -283,138 +283,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/04/15/WebStorage.html" itemprop="url">
-                  WebStorage
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-15T00:00:00+08:00" content="2016-04-15">
-              2016-04-15
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/工作总结/" itemprop="url" rel="index">
-                    <span itemprop="name">工作总结</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/15/WebStorage.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/15/WebStorage.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/15/WebStorage.html" class="leancloud_visitors" data-flag-title="WebStorage">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          接着上周那个获取地理位置的功能继续说，上周JSSDK注册是成功了，但是又发现了另一个bug，如果一个未登陆过的用户从分享链接登录会报错误，state参数过长，登录失败。
-这个bug出现的原因是在后台，因为后台代替前端去调微信授权的接口，取到code后再去种session到前端的这个页面，后台会携带一些参数在state这个字段中，但微信state字段最大支持128字节，超出这个最大限制后就会报错了。
-*我不太清楚在state字段中带参数的原因，但是听他们讨论大概是因为需要跨域去传递一些东西，所以要在state字段中传递参数。
-后来就改变了注册的方式，原来是后台去代替前端去调微信授权的接口，现在改
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/15/WebStorage.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/03/31/你不知道的JavaScript读书笔记——this.html" itemprop="url">
                   《你不知道的JavaScript》读书笔记——this
                 </a>
@@ -926,6 +794,140 @@
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/28/你不知道的JavaScript读书笔记——作用域.html" itemprop="url">
+                  《你不知道的JavaScript》读书笔记——作用域
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-28T00:00:00+08:00" content="2016-03-28">
+              2016-03-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/28/你不知道的JavaScript读书笔记——作用域.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/你不知道的JavaScript读书笔记——作用域.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/28/你不知道的JavaScript读书笔记——作用域.html" class="leancloud_visitors" data-flag-title="《你不知道的JavaScript》读书笔记——作用域">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          这几天在看《你不知道的JavaScript》这本书，内容简单易懂而且觉得讲的很有意思，趁着还热乎，把刚看完的总结一下吧。这个是第一部分讲的是作用域。
+1. 初识作用域作用域是一套规则，用于确定在何处以及如何查找变量。编译器有一个术语，比如我们查找变量a的值，引擎会进行LHS和RHS查询。LHS和RHS是什么呢？通俗的讲就是对赋值操作的左侧和右侧进行查询。
+举一个例子，比如对var a=2这个赋值操作来讲，左侧和右侧就是=等于符号的左侧和右侧（并不一定就是=号）。这个a=2的赋值操作其实分成两步来进行:
+
+var a在其作用域中声明新的变量，这个会在执行var a=2之前进行。
+然后会对a = 
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/28/你不知道的JavaScript读书笔记——作用域.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -971,7 +973,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
