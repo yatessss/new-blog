@@ -283,6 +283,140 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" itemprop="url">
+                  《你不知道的JavaScript》读书笔记——闭包
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-29T00:00:00+08:00" content="2016-03-29">
+              2016-03-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/你不知道的JavaScript读书笔记——闭包.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" class="leancloud_visitors" data-flag-title="《你不知道的JavaScript》读书笔记——闭包">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          理解闭包闭包是什么，怎么理解？
+闭包就是一个作用域的外部变量保持着对这个作用域的引用，这个引用就叫做闭包。
+这么讲有些晦涩，看这个代码：
+123456789function foo() &#123;     var a = 2;     function bar() &#123;         console.log( a );     &#125;     return bar; &#125; var baz = foo();baz(); // 2 这就是闭包
+因为baz本身是foo作用域之外的变量，根据作用域的规则，baz本身是不可以访问到foo作用域内的变量的。
+本来在通常的情况下，在
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/28/你不知道的JavaScript读书笔记——作用域.html" itemprop="url">
                   《你不知道的JavaScript》读书笔记——作用域
                 </a>
@@ -812,140 +946,6 @@ update 4.18已经一个月了吧，最近工作也比较繁琐，学习时间也
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/10/工作总结.html" itemprop="url">
-                  日常工作总结-2016-03-10
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-10T00:00:00+08:00" content="2016-03-10">
-              2016-03-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/工作总结/" itemprop="url" rel="index">
-                    <span itemprop="name">工作总结</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/10/工作总结.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/10/工作总结.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/10/工作总结.html" class="leancloud_visitors" data-flag-title="日常工作总结-2016-03-10">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          这个星期，接到了一个红包页面的任务，逻辑方面并不是特别复杂，但是在仔细想过之后也可以实现。最让我头疼的问题是调微信的两个接口：一个是登录接口，另一个是注册JSSDK的接口，因为我从来没有接触过这个问题，所以遇到了很多的坑，这也直接导致和我配合的后台同学受到了我的拖累，调接口用了很长很长时间。
-首先我们先来看一下这个页面的逻辑，然后分析一下这两个接口的JS，最后说一说我碰到的一些坑和学到的东西吧。
-1.页面的逻辑首先来看一下页面的逻辑，我做了一张图，大致的逻辑就是这样，其中可以还包含着一些交互和动画方面的细节，我这里就详细阐述了。逻辑如下图：
-
-
-2.分析接口首先，这两个接口分别是，微信授权登录
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/10/工作总结.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -991,7 +991,7 @@ update 4.18已经一个月了吧，最近工作也比较繁琐，学习时间也
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">40</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
