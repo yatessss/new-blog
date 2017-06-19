@@ -283,6 +283,138 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/29/重排reflow与重绘repaint.html" itemprop="url">
+                  重排reflow与重绘repaint
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-29T00:00:00+08:00" content="2016-04-29">
+              2016-04-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/29/重排reflow与重绘repaint.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/29/重排reflow与重绘repaint.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/29/重排reflow与重绘repaint.html" class="leancloud_visitors" data-flag-title="重排reflow与重绘repaint">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          重绘与重排最近看了一本书《高性能JavaScript》，里面有很多有用的代码片段，后面我准备把一些摘抄记录下来。
+今天主要想说说重绘与重排，这个也是《高性能JavaScript》中讲的一部分，我来总结一下吧。
+首先先要了解一下浏览器渲染页面的过程，当浏览器下载完页面所需要的html、css、js和图片等后就会开始解析并生成两个内部的数据结构：DOM树和渲染树。DOM树是表示页面的结构，渲染树是表示DOM节点如何显示。
+DOM树不必多说，渲染树会结合DOM树和DOM节点对应的CSS样式去理解页面上每个元素的样式（比如内外边距，边框，位置等），去构建一个渲染树。渲染树完成后浏览器就开始绘制（pai
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/29/重排reflow与重绘repaint.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/18/《JavaScript高级程序设计》读书笔记.html" itemprop="url">
                   《JavaScript高级程序设计》读书笔记
                 </a>
@@ -799,145 +931,11 @@ Number()􏰟parseInt()􏰠和parseFloat()，第一个
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" itemprop="url">
-                  《你不知道的JavaScript》读书笔记——闭包
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-29T00:00:00+08:00" content="2016-03-29">
-              2016-03-29
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/你不知道的JavaScript读书笔记——闭包.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html" class="leancloud_visitors" data-flag-title="《你不知道的JavaScript》读书笔记——闭包">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          理解闭包闭包是什么，怎么理解？
-闭包就是一个作用域的外部变量保持着对这个作用域的引用，这个引用就叫做闭包。
-这么讲有些晦涩，看这个代码：
-123456789function foo() &#123;     var a = 2;     function bar() &#123;         console.log( a );     &#125;     return bar; &#125; var baz = foo();baz(); // 2 这就是闭包
-因为baz本身是foo作用域之外的变量，根据作用域的规则，baz本身是不可以访问到foo作用域内的变量的。
-本来在通常的情况下，在
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/29/你不知道的JavaScript读书笔记——闭包.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -978,7 +976,7 @@ Number()􏰟parseInt()􏰠和parseFloat()，第一个
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">40</span>
+              <span class="site-state-item-count">41</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
