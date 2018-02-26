@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yatessss.com/"/>
-  <updated>2017-06-19T15:29:55.000Z</updated>
+  <updated>2018-02-26T16:58:38.000Z</updated>
   <id>http://www.yatessss.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>年度目标</title>
+    <link href="http://www.yatessss.com/2018/02/26/%E5%B9%B4%E5%BA%A6%E7%9B%AE%E6%A0%87.html"/>
+    <id>http://www.yatessss.com/2018/02/26/年度目标.html</id>
+    <published>2018-02-25T16:00:00.000Z</published>
+    <updated>2018-02-26T16:58:38.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近的近况&lt;/p&gt;
+&lt;p&gt;这半年学会了那些东西&lt;/p&gt;
+&lt;p&gt;缺失了哪些部分&lt;/p&gt;
+&lt;p&gt;转眼一年就过去了，很久都没有写博客了，自从去年五月份找到工作就投入到了新的工作当中，半年一晃眼就过去了感到的有忙碌、有充实、有感恩、有疲惫。&lt;/p&gt;
+&lt;p&gt;新公司的开发团队比较正规，迭代速度两周一次，两周包括开发联调测试，压力自然不小。几乎所有的时间都用在了工作中，有时想想原来空闲时间比较多的工作是不是挺好的，可以用一些时间自己研究一些新技术，做一些小demo。而现在每天时间都花在完成需求上面&lt;br&gt;最近的近况&lt;/p&gt;
+&lt;p&gt;这半年学会了那些东西&lt;/p&gt;
+&lt;p&gt;缺失了哪些部分&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近的近况&lt;/p&gt;
+&lt;p&gt;这半年学会了那些东西&lt;/p&gt;
+&lt;p&gt;缺失了哪些部分&lt;/p&gt;
+&lt;p&gt;转眼一年就过去了，很久都没有写博客了，自从去年五月份找到工作就投入到了新的工作当中，半年一晃眼就过去了感到的有忙碌、有充实、有感恩、有疲惫。&lt;/p&gt;
+&lt;p&gt;新公司的开发团队比较正规，
+    
+    </summary>
+    
+      <category term="杂事二三" scheme="http://www.yatessss.com/categories/%E6%9D%82%E4%BA%8B%E4%BA%8C%E4%B8%89/"/>
+    
+    
+      <category term="杂事二三" scheme="http://www.yatessss.com/tags/%E6%9D%82%E4%BA%8B%E4%BA%8C%E4%B8%89/"/>
+    
+  </entry>
   
   <entry>
     <title>不输密码和ip地址使用ssh链接服务器</title>
@@ -1175,85 +1208,6 @@
       <category term="JavaScript" scheme="http://www.yatessss.com/tags/JavaScript/"/>
     
       <category term="this" scheme="http://www.yatessss.com/tags/this/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信JSSDK坑啊坑</title>
-    <link href="http://www.yatessss.com/2016/03/30/%E5%BE%AE%E4%BF%A1JSSDK%E5%9D%91%E5%95%8A%E5%9D%91.html"/>
-    <id>http://www.yatessss.com/2016/03/30/微信JSSDK坑啊坑.html</id>
-    <published>2016-03-29T16:00:00.000Z</published>
-    <updated>2017-01-03T03:29:55.000Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;update：&quot;&gt;&lt;a href=&quot;#update：&quot; class=&quot;headerlink&quot; title=&quot;update：&quot;&gt;&lt;/a&gt;update：&lt;/h3&gt;&lt;p&gt;今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。&lt;/p&gt;
-&lt;p&gt;于是我首先看了一下，这个问题是不是可以复现，在我的手机上也确实是复现了，那说明这确实是一个bug。&lt;/p&gt;
-&lt;p&gt;然后我把分享后的这个地址复制了出来，在微信web开发者工具中打开查看，发现是JSSDK注册失败，报错：&lt;code&gt;config:invalid signature&lt;/code&gt;，所以手机不能调微信获取地理位置的接口。&lt;/p&gt;
-&lt;p&gt;查看了一下，是微信分享后会在本来的url后面带两个参数&lt;code&gt;?from=groupmessage&amp;amp;isappinstalled=0&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;注册微信JSSDK是这样一个流程，前端首先先去访问公司的一个后台接口带一个?url=’’的参数，后台会根据我的参数去访问微信提供的接口，拿到timestamp，nonceStr，signature等参数并发送给前端，前端再去注册。&lt;/p&gt;
-&lt;p&gt;所以我认为可能是因为我请求后台接口时的url直接是取得是&lt;code&gt;location.href&lt;/code&gt;，带了微信分享后的那两个参数，所以后台处理的时候出现了错误，造成注册JSSDK时的签名无效。所以我把&lt;code&gt;location.href&lt;/code&gt;改成了&lt;code&gt;location.origin + location.pathname&lt;/code&gt;这样就把&lt;code&gt;？号&lt;/code&gt;后的参数都去掉了，我想这样应该就保持了分享前后url的一致性，不会影响JSSDK的注册吧。结果其实没有效果。&lt;/p&gt;
-&lt;p&gt;然后，又想我保持了url参数的一致性都没有作用，那是不是后台在处理的时候并不是取的我后面的这个参数，而是从请求头中拿了&lt;code&gt;referer&lt;/code&gt;这个属性呢？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;code&gt;referer&lt;/code&gt;是请求头当中的一个字段，它可以告诉服务器我是从哪个url过来的。这个字段一般是用来防止盗链外链用的。有兴趣的同学可以搜索一下，我也是搜索得来的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但是后台同学说他拿的就是我url后面的参数。&lt;/p&gt;
-&lt;p&gt;那问题到底在哪里呢？其实很蠢因为我url没有进行encodeURI编码，所以造成了错误，所以以后一定要记得向后台传递url的时候&lt;strong&gt;一定要进行encodeURI编码！！！一定要进行encodeURI编码！！！一定要进行encodeURI编码！！！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;虽说绕了一些弯路，但是也了解了一些原来没涉及到的知识，比如&lt;code&gt;location&lt;/code&gt;中的一些方法（改天单独学习总结下），请求头当中的一些字段（也要系统的学习一下）。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;最近一段时间的工作不是很忙，给一个微信的项目加一些需求，主要就是通过微信JSSDK的获取地理位置的接口，拿到经纬度，完成一些功能。&lt;/p&gt;
-&lt;p&gt;主要遇到了三个以后需要注意的地方吧，这里先描述一下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;微信中AppId的作用。&lt;/li&gt;
-&lt;li&gt;微信禁止不安全的https链接。&lt;/li&gt;
-&lt;li&gt;跨域携带cookie&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;微信中AppId的作用&quot;&gt;&lt;a href=&quot;#微信中AppId的作用&quot; class=&quot;headerlink&quot; title=&quot;微信中AppId的作用&quot;&gt;&lt;/a&gt;微信中AppId的作用&lt;/h3&gt;&lt;p&gt;大家知道，开发手机页面的时候，调试时意见很麻烦的事情。因为在移动端你并不能想浏览器一样打开开发者工具，当报一些错误的时候，手机是无法查看的，所以一般我们就是在chrome的开发者工具中来模拟手机，比如屏幕大小、触摸事件等等。如果是一般的移动端页面，这样调试是可以的，但是如果JS中回去调&lt;code&gt;open.weixin.qq&lt;/code&gt;授权登录的接口的话，在浏览器模拟的时候，就会显示&lt;code&gt;请在微信中打开&lt;/code&gt;类似的字样。&lt;/p&gt;
-&lt;p&gt;所以我们如果是开发微信中页面的时候，一般会有两种办法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;先把&lt;code&gt;open.weixin.qq&lt;/code&gt;授权登录的接口去掉，这样可以跳过微信验证的步骤，现在本地来开发页面。&lt;/li&gt;
-&lt;li&gt;通过使用微信官方的&lt;strong&gt;微信web开发者工具&lt;/strong&gt;来开发页面。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;其实两种方法是配合来使用的，在页面功能还没有做完的时候，我们可以在本地的浏览器中先开发功能，因为浏览器中有一些插件可以来跨域，携带cookie等等方便开发，但是在浏览器中并不能调用JSSDK的方法。功能开发完毕要跑通整个流程的时候，就可以在web开发者工具中调试，因为web开发者工具中可以调用微信的JSSDK的方法和授权登录等等，但是在web开发者工具中只能运行公众号后台绑定的安全域名下的页面，所以需要我们上到测试环境下去跑。&lt;/p&gt;
-&lt;p&gt;而我遇到的第一个问题就是：在公众号后台已经添加了我为开发者，但是我在web开发者工具中还是无法打开后台绑定的安全域名下的页面。起初我还以为是不是公众号没有绑定这个域名呢？导致我无法打开页面，后来到公众号后台查看并不是这样，经过排查是因为，后台接口用的appid和公众号的appid不匹配造成的。那appid的作用是什么呢？&lt;/p&gt;
-&lt;p&gt;appid其实就是起到一个标识的作用，有了appid微信就会知道你是哪一个公众账号，知道了是哪一个公众号，他就会在后台查看你这个公众号下有哪些安全域名，公众号开通了哪些功能，有哪些权限以及一系列的信息。&lt;/p&gt;
-&lt;p&gt;比如：如果你打开的网址和你发出的appid对应的公众号绑定的安全域名不匹配时，微信会禁止你去打开这个链接；如果你要调试页面，微信会到后台去找你所用的微信号是不是在appid对应的公众号下的开发者名单中有没有你，如果没有微信也会禁止你去调试这个页面；公众号后台也会有很多功能，微信通过appid也能来查询你有没有开通这个功能。&lt;/p&gt;
-&lt;p&gt;所以，因为后台接口用的是另一个appid，微信认为开打的是另一个公众号的页面，而这个公众号的开发者名单中并没有我，所以我没有办法去调试。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;微信禁止不安全的https链接&quot;&gt;&lt;a href=&quot;#微信禁止不安全的https链接&quot; class=&quot;headerlink&quot; title=&quot;微信禁止不安全的https链接&quot;&gt;&lt;/a&gt;微信禁止不安全的https链接&lt;/h3&gt;&lt;p&gt;经过第一个问题之后，我可以在web开发者工具中调试我的页面了，我又遇到了另一个奇怪的问题：我在开发者工具中整个页面功能没有问题，但是在微信当中打开，就会出现错误。当时，特别困惑因为在开发者工具中并没有报任何错误，而在微信中你无法看到错误信息，所以到底是哪个位置出现了错误你也不清楚。&lt;/p&gt;
-&lt;p&gt;经过了上网查询，自己排查，知道了原因是这样的。&lt;/p&gt;
-&lt;p&gt;因为后台接口走的是https，后台的https证书只对应线上的那个域名，而在测试环境中因为接口域名和证书并不对应，所以微信认为这个链接是不安全的，而微信会禁止不安全的https链接。而在web开发者工具中是可以访问这样不安全的https的连接的，所以就会出现上述的问题。&lt;/p&gt;
-&lt;p&gt;所以，在今后遇到这样web开发者工具和微信行为不一致的时候，我们可以先查看一下是不是我们有https的接口是不安全的。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;withCredentials跨域请求&quot;&gt;&lt;a href=&quot;#withCredentials跨域请求&quot; class=&quot;headerlink&quot; title=&quot;withCredentials跨域请求&quot;&gt;&lt;/a&gt;withCredentials跨域请求&lt;/h3&gt;&lt;p&gt;我们首先应该知道这个知识：默认情况下，ajxa跨域请求是不会发送用户认证凭据的（cookie、HTTP认证及客户端SSL证明等）。&lt;/p&gt;
-&lt;p&gt;有什么方法可以解决这个问题呢？可以通过设置ajax的&lt;code&gt;withCredentials&lt;/code&gt;属性为&lt;code&gt;true&lt;/code&gt;来指定某个请求是可以发送用户认证凭据。不过要注意：支持withCredentials属性的浏览器有Firefox 3.5+、Safari 4+和Chrome。IE10及更早版本都不支持。&lt;/p&gt;
-&lt;p&gt;如果设置这个属性的话，请求头中就会带上cookie，而后台要接受这个凭据的话，在服务端的响应头必须添加&lt;code&gt;Access-Control-Allow-Credentials: true&lt;/code&gt;，并且&lt;strong&gt;服务端需指定一个域名（Access-Control-Allow-Origin:www.xxxxxx.com），而不能使用泛型（Access-Control-Allow-Origin: * ）&lt;/strong&gt;这样我们就可以跨域发送cookie了。&lt;/p&gt;
-&lt;p&gt;如果是原生的话大概是这样：&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; xhr = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; XMLHttpRequest();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xhr.open(&lt;span class=&quot;string&quot;&gt;&#39;GET&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;http://www.xxx.com/api&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xhr.withCredentials = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xhr.onload = onLoadHandler;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xhr.send();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;如果使用类库的话（如zepto）：&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$.ajax(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	url: url,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	type: &lt;span class=&quot;string&quot;&gt;&#39;get&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	data:  data,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	dataType: &lt;span class=&quot;string&quot;&gt;&#39;json&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	xhrFields: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   		withCredentials: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;zepto&lt;/code&gt;的&lt;code&gt;ajax&lt;/code&gt;中有这样一个参数：&lt;code&gt;xhrFields&lt;/code&gt; (默认： none): 一个对象包含的属性被逐字复制到XMLHttpRequest的实例。&lt;/p&gt;
-&lt;p&gt;大概就是这么多吧，如果想起来在添加。&lt;/p&gt;
-&lt;p&gt;最后在吐槽一下吧，生活不如意之事十之八九&lt;/p&gt;
-&lt;p&gt;总感觉生活总在你比较满意的时候给你一记当头棒喝，本来最近还活的好好的，经过几个月的努力学习算是顺利的转行，也在一直学习成长，对自己最近的表现也比较满意。而上帝可能觉得你近一阶段有些骄傲和浮躁了，需要给你提醒一下，所以最近遇到了一个小挫折，也让自己知道了一些不足，就像盖楼，基础往往决定你能不能盖一座高楼，而技术决定你能盖多高，基础确实是一个必要条件，而我现在就处在半瓶水响叮当的阶段，对一些基础只是知其然不知其所以然，往往会用、知道，但是没有深究原理。这就对出现的一些问题在解决起来，可能会毫无头绪，依靠网络未尝不是一个办法，但往往不是最好的办法，如果了解原理你可能对出现问题的原因追根溯源，但是你如果只找到这个问题的解决办法，下次出现因为这个原理出现的其他问题你依然会没有头绪。&lt;/p&gt;
-&lt;p&gt;再有，听清问题，想好之后再去回答，说的每句话应该是绝对经过思考的  尤其在不熟悉的人之间。&lt;/p&gt;
-&lt;p&gt;小品里说过嘛，车轱辘往前转，人要往前看，夯实基础，拥抱新技术，是我未来一年的目标，不卑不亢，不喜不悲，希望下次再战。&lt;/p&gt;
-&lt;p&gt;以上。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;update：&quot;&gt;&lt;a href=&quot;#update：&quot; class=&quot;headerlink&quot; title=&quot;update：&quot;&gt;&lt;/a&gt;update：&lt;/h3&gt;&lt;p&gt;今天又提了一个bug：就是这个页面分享之后，点击分享的链接不能获取到地理位置。&lt;/p&gt;
-&lt;p&gt;于是我
-    
-    </summary>
-    
-      <category term="工作总结" scheme="http://www.yatessss.com/categories/%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
-    
-    
-      <category term="微信JSSDK" scheme="http://www.yatessss.com/tags/%E5%BE%AE%E4%BF%A1JSSDK/"/>
-    
-      <category term="跨域" scheme="http://www.yatessss.com/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-      <category term="appid" scheme="http://www.yatessss.com/tags/appid/"/>
-    
-      <category term="referer" scheme="http://www.yatessss.com/tags/referer/"/>
     
   </entry>
   
